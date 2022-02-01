@@ -1,0 +1,61 @@
+/* alignments */
+.flex {
+  display: flex;
+}
+
+.flex-inline {
+  display: inline-flex;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-center-x {
+  display: flex;
+  align-items: center;
+}
+
+.flex-center-y {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-center-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.flex-gap {
+  gap: 1rem;
+}
+
+.flex-gap-2 {
+  gap: 2rem;
+}
+
+.flex-gap-3 {
+  gap: 3rem;
+}
+
+.flex-gap-4 {
+  gap: 4rem;
+}
+
+.flex-gap-5 {
+  gap: 5rem;
+}
