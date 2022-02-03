@@ -1,0 +1,41 @@
+.alert {
+  border-radius: 4px;
+  color: white;
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 1rem 2.2rem 1rem 1.5rem;
+  position: relative;
+  font-size: 1rem;
+}
+
+.alert > .close {
+  margin: 0;
+  background-color: transparent;
+  top: 0;
+  right: 0;
+  position: absolute;
+  padding: 1rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  width: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+.alert > .close .fa {
+  color: white;
+}
+
+.alert-primary {
+  background-color: var(--primary-dark);
+}
+
+.alert-secondary {
+  background-color: var(--secondary-dark);
+}
+
+.alert-error {
+  background-color: var(--error-dark);
+}

@@ -5,58 +5,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Component Library</title>
-    <link rel="stylesheet" href="./src/style.css" />
+    <link rel="stylesheet" href="./src/components/main.css" />
+    <link rel="stylesheet" href="./style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
   </head>
   <body>
-    Coming Soon !
+    <div class="container">
+    <h2 id="alert">Alert</h2>
+    <div>
+      <div class="alert alert-primary">
+        <button class="close"><i class="fa fa-times"></i></button>
+        Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem
+        ipsum dolor.
+      </div>
+    </div>
+    <div>
+      <div class="alert alert-secondary">
+        <button class="close"><i class="fa fa-times"></i></button>
+        Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem
+        ipsum dolor.
+      </div>
+    </div>
+    <div>
+      <div class="alert alert-error">
+        <button class="close"><i class="fa fa-times"></i></button>
+        Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem
+        ipsum dolor.
+      </div>
+    </div>
+    <h2 id="avatar">Avatar</h2>
+    <div>
+      <img class="avatar" src="https://picsum.photos/200/300/" alt="avatar" />
 
-    <p style="color: var(--primary-main)">
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-    </p>
-    <p style="color: var(--secondary-light)">
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-    </p>
-    <p
-      class="flex-inline"
-      style="color: var(--success-dark); background-color: var(--error-light)"
-    >
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-    </p>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+      <img
+        class="avatar avatar-sm"
+        src="https://picsum.photos/200/300/"
+        alt="avatar"
+      />
 
-    <p
-      class="codepen"
-      data-height="368"
-      data-theme-id="dark"
-      data-default-tab="html,result"
-      data-slug-hash="podjmRV"
-      data-user="g-arun"
-      style="
-        height: 368px;
-        box-sizing: border-box;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: 2px solid;
-        margin: 1em 0;
-        padding: 1em;
-      "
-    >
-      <span
-        >See the Pen
-        <a href="https://codepen.io/g-arun/pen/podjmRV"> avatar</a> by Arun (<a
-          href="https://codepen.io/g-arun"
-          >@g-arun</a
-        >) on <a href="https://codepen.io">CodePen</a>.</span
-      >
-    </p>
-    <script
-      async
-      src="https://cpwebassets.codepen.io/assets/embed/ei.js"
-    ></script>
+      <img
+        class="avatar avatar-md"
+        src="https://picsum.photos/200/300/"
+        alt="avatar"
+      />
+
+      <img
+        class="avatar avatar-lg"
+        src="https://picsum.photos/200/300/"
+        alt="avatar"
+      />
+    </div>
+    <h2 id="button">Button</h3>
+    <div>
+      <button class="btn btn-primary">Button</button>
+      <button class="btn btn-secondary">Button</button>
+      <button class="btn btn-error">Button</button>
+      <button class="btn btn-info">Button</button>
+    </div>
+    <div>
+      <button class="btn btn-outline-primary">Button</button>
+      <button class="btn btn-outline-secondary">Button</button>
+      <button class="btn btn-outline-error">Button</button>
+      <button class="btn btn-link">Button</button>
+    </div>
+    <div>
+      <button class="btn btn-fab"><i class="fa fa-plus"></i></button>
+      <button class="btn btn-fab btn-fab-secondary"><i class="fa fa-plus"></i></button>
+      <button class="btn btn-fab btn-fab-error"><i class="fa fa-plus"></i></button>
+    </div>
+    </div>
   </body>
 </html>

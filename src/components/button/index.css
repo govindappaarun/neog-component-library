@@ -1,0 +1,143 @@
+/* Reference https://milligram.io/ */
+.btn,
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  border: none;
+  border-radius: 4px;
+  color: initial;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  margin: 5px;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.btn:hover,
+.btn:focus {
+  outline: 0;
+  transform: scale(1.1);
+}
+
+.btn[disabled] {
+  cursor: default;
+  opacity: 0.5;
+}
+
+/* basic buttons */
+
+.btn-primary {
+  background-color: var(--primary-main);
+  border: 0.1rem solid var(--primary-main);
+  color: white;
+}
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+}
+
+.btn-secondary {
+  background-color: var(--secondary-main);
+  border-color: var(--secondary-main);
+  color: white;
+  outline: 0;
+}
+
+.btn-secondary:hover {
+  background-color: var(--secondary-dark);
+}
+
+.btn-error {
+  background-color: var(--error-main);
+  border-color: var(--error-main);
+  color: white;
+  outline: 0;
+}
+
+.btn-error:hover {
+  background-color: var(--error-dark);
+}
+
+/* outline buttons */
+.btn-outline-primary {
+  background-color: transparent;
+  border: 1px solid;
+  color: var(--primary-main);
+}
+
+.btn-outline-primary:hover {
+  color: white;
+  background-color: var(--primary-main);
+}
+
+.btn-outline-secondary {
+  background-color: transparent;
+  border: 1px solid;
+  color: var(--secondary-main);
+}
+
+.btn-outline-secondary:hover {
+  color: white;
+  background-color: var(--secondary-main);
+}
+
+.btn-outline-error {
+  background-color: transparent;
+  border: 1px solid;
+  color: var(--error-main);
+}
+
+.btn-outline-error:hover {
+  color: white;
+  background-color: var(--error-main);
+}
+
+/* special buttons */
+
+.btn-link {
+  background-color: transparent;
+  text-decoration: none;
+  border: none;
+}
+
+.btn-link:hover {
+  background-color: rgba(var(--primary-light), 0.04);
+  border-color: initial;
+  text-decoration: underline;
+}
+
+.btn-icon {
+  border-radius: 50%;
+  border: none;
+  background-color: initial;
+  padding: 8px;
+  display: inline-flexbox;
+}
+
+.btn-fab {
+  border-radius: 50%;
+  background-color: var(--primary-main);
+  box-shadow: 1px 1px 2px;
+  color: white;
+  height: 3.5rem;
+  width: 3.5rem;
+  font-size: 1.2rem;
+}
+
+.btn-fab-secondary {
+  background-color: var(--secondary-main);
+}
+
+.btn-fab-error {
+  background-color: var(--error-main);
+}
+
+.btn-fab:hover {
+  box-shadow: 2px 1px 8px 0px rgba(0, 0, 0, 0.75);
+  color: white;
+}
