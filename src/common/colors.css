@@ -1,7 +1,7 @@
 /* Color Variables 
  credit : https://mui.com/customization/palette/#palette-colors
 */
-
+/* todo: convert hex to rgb to be able to use with rgba */
 :root {
   --primary-light: #42a5f5;
   --primary-main: #1976d2;
