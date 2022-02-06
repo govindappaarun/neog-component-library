@@ -6,36 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Component Library</title>
     <link rel="stylesheet" href="./src/components/main.css" />
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css"
+    />
   </head>
   <body>
     <div class="container">
-    <h2 id="alert">Alert</h2>
+               
+   <section id="alert">
+    <h2>Alert</h2>
+    <div class="description">An alert is a simple colored block meant to draw the attention to the user about something. As such, it can be used as a pinned alert in the corner of the viewport. And it has close button to dimiss it.</div>
+    <pre>
+      <code class="language-html">
+      <div class="alert alert-primary">
+        <button class="close"><i class="far fa-times"></i></button>
+        Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem
+        ipsum dolor.
+      </div>
+     </code>
+    </pre>
     <div>
       <div class="alert alert-primary">
-        <button class="close"><i class="fa fa-times"></i></button>
+        <button class="close"><i class="far fa-times"></i></button>
         Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem
         ipsum dolor.
       </div>
     </div>
     <div>
       <div class="alert alert-secondary">
-        <button class="close"><i class="fa fa-times"></i></button>
+        <button class="close"><i class="far fa-times"></i></button>
         Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem
         ipsum dolor.
       </div>
     </div>
     <div>
       <div class="alert alert-error">
-        <button class="close"><i class="fa fa-times"></i></button>
+        <button class="close"><i class="far fa-times"></i></button>
         Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem
         ipsum dolor.
       </div>
     </div>
+    </section>
     <h2 id="avatar">Avatar</h2>
     <div>
       <img class="avatar" src="https://picsum.photos/200/300/" alt="avatar" />
@@ -72,10 +89,123 @@
       <button class="btn btn-link">Button</button>
     </div>
     <div>
-      <button class="btn btn-fab"><i class="fa fa-plus"></i></button>
-      <button class="btn btn-fab btn-fab-secondary"><i class="fa fa-plus"></i></button>
-      <button class="btn btn-fab btn-fab-error"><i class="fa fa-plus"></i></button>
+      <button class="btn btn-fab"><i class="far fa-plus"></i></button>
+      <button class="btn btn-fab btn-fab-secondary"><i class="far fa-plus"></i></button>
+      <button class="btn btn-fab btn-fab-error"><i class="far fa-plus"></i></button>
     </div>
+    <h2>Badge</h2>
+    <div>
+      <span class="badge badge-text">0</span>
+      <span class="badge badge-text">10</span>
+      <span class="badge badge-text">100</span>
+      <span class="badge badge-text">10+</span>
+      <span class="badge badge-text badge-outlined">10+</span>
     </div>
+    <div style="margin-top: 2rem;">
+      <span class="badge badge-online"></span>
+      <span class="badge"></span>      
+      <span class="badge badge-away"></span>
+    </div>
+
+     <h2>Card</h2>
+      
+    <h3>Shadows</h3>
+     <div class="card shadow-xs">
+        <div class="card-media">
+          <h2>Title</h2>
+        </div>
+      </div>
+      <div class="card shadow-sm">
+        <div class="card-media">
+          <h2>Title</h2>
+        </div>
+      </div>
+      <div class="card shadow-md">
+        <div class="card-media">
+          <h2>Title</h2>
+        </div>
+      </div>
+      <div class="card shadow-lg">
+        <div class="card-media">
+          <h2>Title</h2>
+        </div>
+      </div>
+   
+      <h3>Variations of Cards</h3>
+
+      <div class="card shadow-1">
+        <div class="card-body">
+          <div class="card-media">
+           <div class="badge badge-text"><i class="far fa-heart"></i></div>
+            <img src="https://picsum.photos/200/300/" alt="avatar" />
+          </div>
+          <div class="card-header">
+            <h2 class="card-title">Our Changing Planet</h2>
+            <p class="card-sub-title">by Kurt Wagner</p>
+          </div>
+          <div class="card-text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. dolor sit
+            amet consectetur adipisicing elit. dolor sit amet consectetur
+            adipisicing elit.
+          </div>
+        </div>
+        <div class="card-footer">
+          <div class="card-actions flex">
+            <div class="buttons flex">
+              <button class="btn btn-link">Like</button>
+              <button class="btn btn-link">Submit</button>
+            </div>
+            <div class="icons flex">
+              <button class="btn-icon"><i class="far fa-heart"></i></button>
+              <button class="btn-icon"><i class="fa fa-share"></i></button>
+              <button class="btn-icon">
+                <i class="far fa-comment-dots"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card horizontal">
+        <div class="card-body">
+          <div class="card-media">
+            <img src="https://picsum.photos/200/300/" class="avatar" alt="avatar" />
+          </div>
+          <div class="card-header">
+            <h2 class="card-title">Our Changing Planet</h2>
+            <p class="card-sub-title">by Kurt Wagner</p>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div class="card-actions flex">
+            <div class="buttons flex">
+              <button class="btn btn-link">Like</button>
+              <button class="btn btn-link">Submit</button>
+            </div>
+            <div class="icons flex">
+              <button class="btn-icon"><i class="far fa-heart"></i></button>
+              <button class="btn-icon"><i class="fa fa-share"></i></button>
+              <button class="btn-icon">
+                <i class="far fa-comment-dots"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      // hljs.highlightAll();
+      document.addEventListener("DOMContentLoaded", (event) => {
+        document.querySelectorAll("pre code").forEach((el) => {
+          el.innerHTML = el.innerHTML
+            .replace(/&/g, "&amp;")
+            .replace(/</g, "&lt;")
+            .replace(/>/g, "&gt;")
+            .replace(/"/g, "&quot;")
+            .replace(/'/g, "&#039;");
+          hljs.highlightElement(el);
+        });
+      });
+    </script>
   </body>
 </html>

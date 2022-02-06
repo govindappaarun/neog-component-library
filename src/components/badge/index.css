@@ -1,4 +1,36 @@
-/* 
-Badge on Icons
-Badge on Avatars 
-*/
+.badge {
+  display: inline-flex;
+  width: 1.2rem;
+  height: 1.2rem;
+  background: var(--error-light);
+  border-radius: 50%;
+}
+
+.badge-text {
+  color: white;
+  padding: 5px;
+  font-size: 1rem;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+}
+
+.badge-outlined {
+  border: 1px solid;
+  background-color: transparent;
+  color: var(--error-light);
+}
+
+.badge-online {
+  border: 1px solid grey;
+  background-color: var(--success-light);
+}
+
+.badge-busy {
+  background-color: var(--error-light);
+}
+
+.badge-away {
+  background-color: lightgray;
+}
