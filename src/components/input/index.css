@@ -7,3 +7,51 @@ input with validation
 input with icon prefix
 
 */
+.input-wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  margin: 0.5rem;
+  position: relative;
+  gap: 0.4rem;
+}
+.input-wrapper .error-msg {
+  font-size: 0.85rem;
+}
+.input-wrapper input {
+  border: none;
+  outline: 1px solid var(--text-secondary);
+  padding: 10px;
+  position: relative;
+  border-radius: 5px;
+  font-size: 0.8rem;
+}
+.input-wrapper input:focus-visible {
+  border: none;
+  outline-width: 2px;
+  outline-color: var(--primary-main);
+}
+input:hover {
+  border: none;
+  outline: 2px solid var(--black);
+}
+.input-wrapper.is-invalid {
+  color: var(--error-light);
+}
+.input-wrapper.is-invalid input:focus-visible {
+  outline-width: 2px;
+}
+.input-wrapper.is-invalid input {
+  border: none;
+  outline: 1px solid var(--error-light);
+}
+.input-wrapper.is-invalid input::placeholder {
+  color: var(--error-light);
+}
+
+.input-wrapper.success input {
+  border: none;
+  outline: 2px solid var(--success-main);
+}
+.input-wrapper.success input:focus-visible {
+  outline: 2px solid var(--success-light);
+}
