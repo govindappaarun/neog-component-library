@@ -19,7 +19,7 @@
   <body>
     <div class="container">
    <section id="alert">
-    <h2>Alert</h2>
+    <h2 class="h2">Alert</h2>
     <div class="description">An alert is a simple colored block meant to draw the attention to the user about something. As such, it can be used as a pinned alert in the corner of the viewport. And it has close button to dimiss it.</div>
     <pre>
       <code class="language-html">
@@ -52,7 +52,7 @@
       </div>
     </div>
     </section>
-    <h2 id="avatar">Avatar</h2>
+    <h2 class="h2" id="avatar">Avatar</h2>
     <div>
       <img class="avatar" src="https://picsum.photos/200/300/" alt="avatar" />
 
@@ -92,13 +92,17 @@
       <button class="btn btn-fab btn-fab-secondary"><i class="far fa-plus"></i></button>
       <button class="btn btn-fab btn-fab-error"><i class="far fa-plus"></i></button>
     </div>
-    <h2>Badge</h2>
+    <h2 class="h2">Badge</h2>
     <div>
       <span class="badge badge-text">0</span>
       <span class="badge badge-text">10</span>
       <span class="badge badge-text">100</span>
       <span class="badge badge-text">10+</span>
       <span class="badge badge-text badge-outlined">10+</span>
+
+      <div class="text-badge text-primary">Lorem, ipsum</div>
+
+
     </div>
     <div style="margin-top: 2rem;">
       <span class="badge badge-online"></span>
@@ -106,7 +110,7 @@
       <span class="badge badge-away"></span>
     </div>
 
-     <h2>Card</h2>
+     <h2 class="h2">Card</h2>
       
     <h3>Shadows</h3>
      <div class="card shadow-xs">
@@ -190,21 +194,21 @@
           </div>
         </div>
       </div>
-      <h2>Inputs</h2>
+      <h2 class="h2">Inputs</h2>
       <div class="input-wrapper">
         <label for="firstName">First Name</label>
-        <input type="text" placeholder="FirstName" />
+        <input type="text"class="input"  placeholder="FirstName" />
       </div>
       <div class="input-wrapper success">
         <label for="firstName">First Name</label>
-        <input type="text" placeholder="FirstName" />
+        <input type="text"class="input"  placeholder="FirstName" />
       </div>
       <div class="input-wrapper is-invalid">
         <label for="firstName">First Name</label>
-        <input type="text" placeholder="FirstName" />
+        <input type="text"class="input"  placeholder="FirstName" />
         <span class="error-msg">color text to show that</span>
       </div>
-      <h2>Image Responsive</h2>
+      <h2 class="h2">Image Responsive</h2>
       <div class="img-wrapper">
         <img class="img-responsive" src="https://picsum.photos/400/300/" alt="avatar" />
       </div>
@@ -214,6 +218,30 @@
        <div class="img-wrapper">
         <img class="img-round" src="https://picsum.photos/400/300/" alt="avatar" />
       </div>
+      <section>
+        <h2 class="h2">Text Utilities</h2>
+        <h3 class="h3">Headings</h2>
+        <div>
+          <div class="hero">Lorem ipsum dolor.</div>
+          <h1 class="h1">Lorem ipsum dolor sit amet.</h1>
+          <h2 class="h2">Lorem ipsum dolor sit amet. </h2>
+          <h3 class="h3">Lorem ipsum dolor sit amet.</h3>
+          <h4 class="h4">Lorem ipsum dolor sit amet.</h4>
+          <h5 class="h5">Lorem ipsum dolor sit amet.</h5>
+          <h6 class="h6">Lorem ipsum dolor sit amet.</h6>
+
+          <div class="text-lg py-1">Lorem ipsum dolor sit amet.</div>
+          <div class="text-md py-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, consequuntur.</div>
+          <div class="text-sm py-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, deserunt.</div>
+          <div class="text-xs py-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, ut.</div>
+
+          <div class="text-primary py-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, qui?</div>
+          <div class="text-secondary py-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, in.</div>
+          <div class="text-warning py-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam, velit.</div>
+          <div class="text-error py-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, tempora.</div>
+          <div class="text-success py-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, eligendi?</div>
+        </div>
+      </section>
     </div>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
     <script>

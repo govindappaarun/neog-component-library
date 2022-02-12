@@ -34,3 +34,11 @@
 .badge-away {
   background-color: lightgray;
 }
+
+.text-badge {
+  display: inline-flex;
+  padding: 4px 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
