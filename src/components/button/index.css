@@ -5,17 +5,16 @@ input[type="button"],
 input[type="submit"],
 input[type="reset"] {
   border: none;
-  border-radius: 5px;
   color: initial;
   cursor: pointer;
-  display: inline-block;
   font-size: 1rem;
   font-weight: 700;
   letter-spacing: 0.1rem;
-  padding: 1rem;
+  padding: 0 2rem;
   text-align: center;
   text-decoration: none;
-  text-transform: uppercase;
+  line-height: 3.5rem;
+  /* text-transform: uppercase; */
 }
 
 .btn:hover,
@@ -51,16 +50,24 @@ input[type="reset"] {
 .btn-secondary:hover {
   background-color: var(--secondary-dark);
 }
-
 .btn-error {
   background-color: var(--error-main);
   border-color: var(--error-main);
   color: white;
   outline: 0;
 }
-
 .btn-error:hover {
   background-color: var(--error-dark);
+}
+.btn-warning {
+  background-color: var(--warning-main);
+  border-color: var(--warning-main);
+  color: white;
+  outline: 0;
+}
+
+.btn-warning:hover {
+  background-color: var(--warning-dark);
 }
 
 /* outline buttons */
@@ -69,7 +76,13 @@ input[type="reset"] {
   border: 1px solid;
   color: var(--primary-main);
 }
-
+.btn-outline {
+  color: var(--black);
+  border: thin solid var(--grey-light);
+  background-color: transparent;
+  min-width: 200px;
+  /* TODO: need to remove this width */
+}
 .btn-outline-primary:hover {
   color: white;
   background-color: var(--primary-main);

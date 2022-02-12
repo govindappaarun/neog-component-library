@@ -21,3 +21,9 @@
   opacity: 1;
   transition: opacity 0.2s;
 }
+.img-wrapper {
+  width: 40vw;
+}
+.h-200 {
+  height: 200px;
+}
