@@ -39,3 +39,9 @@
 .alert-error {
   background-color: var(--error-dark);
 }
+.alert-warning {
+  background-color: var(--warning-dark);
+}
+.alert-success {
+  background-color: var(--success-dark);
+}
