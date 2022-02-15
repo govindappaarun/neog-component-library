@@ -32,7 +32,7 @@ input[type="reset"] {
 .btn-primary {
   background-color: var(--primary-main);
   border: 0.1rem solid var(--primary-main);
-  color: white;
+  color: var(--white);
 }
 .btn-primary:hover {
   background-color: var(--primary-dark);
@@ -42,7 +42,7 @@ input[type="reset"] {
 .btn-secondary {
   background-color: var(--secondary-main);
   border-color: var(--secondary-main);
-  color: white;
+  color: var(--white);
   outline: 0;
 }
 
@@ -53,7 +53,7 @@ input[type="reset"] {
 .btn-error {
   background-color: var(--error-main);
   border-color: var(--error-main);
-  color: white;
+  color: var(--white);
   outline: 0;
 }
 .btn-error:hover {
@@ -63,7 +63,7 @@ input[type="reset"] {
 .btn-warning {
   background-color: var(--warning-main);
   border-color: var(--warning-main);
-  color: white;
+  color: var(--white);
   outline: 0;
 }
 
@@ -74,7 +74,7 @@ input[type="reset"] {
 .btn-warning {
   background-color: var(--warning-main);
   border-color: var(--warning-main);
-  color: white;
+  color: var(--white);
   outline: 0;
 }
 
@@ -96,7 +96,7 @@ input[type="reset"] {
   /* TODO: need to remove this width */
 }
 .btn-outline-primary:hover {
-  color: white;
+  color: var(--white);
   background-color: var(--primary-main);
 }
 
@@ -107,7 +107,7 @@ input[type="reset"] {
 }
 
 .btn-outline-secondary:hover {
-  color: white;
+  color: var(--white);
   background-color: var(--secondary-main);
 }
 
@@ -118,7 +118,7 @@ input[type="reset"] {
 }
 
 .btn-outline-error:hover {
-  color: white;
+  color: var(--white);
   background-color: var(--error-main);
 }
 
@@ -163,7 +163,7 @@ input[type="reset"] {
   border-radius: 50%;
   background-color: var(--primary-main);
   box-shadow: 1px 1px 2px;
-  color: white;
+  color: var(--white);
   height: 3.5rem;
   width: 3.5rem;
   font-size: 1.2rem;
@@ -181,7 +181,7 @@ input[type="reset"] {
 
 .btn-fab:hover {
   box-shadow: 2px 1px 8px 0px rgba(0, 0, 0, 0.75);
-  color: white;
+  color: var(--white);
 }
 
 .btn-icon {

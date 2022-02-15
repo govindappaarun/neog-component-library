@@ -44,6 +44,7 @@
 .flex-space-between {
   justify-content: space-between;
 }
+
 .flex-ai-center {
   align-items: center;
 }
@@ -57,6 +58,7 @@
 .flex-gap-0 {
   gap: 0.5rem;
 }
+
 .flex-gap {
   gap: 1rem;
 }
