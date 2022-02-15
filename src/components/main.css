@@ -1,11 +1,23 @@
+/* Base styles & resets */
 @import url("../common/base.css");
+
+/* Colors and Helper classes */
+@import url("../common/box.css");
 @import url("../common/colors.css");
+@import url("../common/flex.css");
 @import url("../common/helper.css");
+
+/* Components */
 @import url("./alert/index.css");
 @import url("./avatar/index.css");
 @import url("./button/index.css");
 @import url("./badge/index.css");
 @import url("./card/index.css");
+@import url("./grid/index.css");
 @import url("./input/index.css");
 @import url("./image/index.css");
+@import url("./modal/index.css");
+@import url("./rating/index.css");
+
+/* Typography classes */
 @import url("./typography/index.css");

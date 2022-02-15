@@ -1,0 +1,19 @@
+.col {
+  --columns: 12; /* Number of columns in the grid system */
+  --width: var(--width-mobile, 0); /* Default width of the element */
+  flex-basis: calc(var(--width) / var(--columns) * 100%);
+}
+
+@media (min-width: 576px) {
+  .col {
+    --width-tablet: var(--width-mobile);
+    --width: var(--width-tablet);
+  }
+}
+
+@media (min-width: 768px) {
+  .col {
+    --width-desktop: var(--width-tablet);
+    --width: var(--width-desktop);
+  }
+}
