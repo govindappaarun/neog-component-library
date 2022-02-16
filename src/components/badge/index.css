@@ -7,7 +7,7 @@
 }
 
 .badge-text {
-  color: white;
+  color: var(--white);
   padding: 5px;
   font-size: 1rem;
   justify-content: center;
@@ -41,4 +41,24 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   cursor: pointer;
+}
+
+.badge-primary {
+  background-color: var(--primary-ultra);
+}
+
+.badge-secondary {
+  background-color: var(--secondary-ultra);
+}
+
+.badge-warning {
+  background-color: var(--warning-ultra);
+}
+
+.badge-success {
+  background-color: var(--success-ultra);
+}
+
+.badge-error {
+  background-color: var(--error-ultra);
 }

@@ -14,13 +14,11 @@ input[type="reset"] {
   text-align: center;
   text-decoration: none;
   line-height: 3.5rem;
-  /* text-transform: uppercase; */
 }
 
 .btn:hover,
 .btn:focus {
   outline: 0;
-  transform: translateY(-3px);
   transition: transform 0.3s;
 }
 
@@ -34,35 +32,49 @@ input[type="reset"] {
 .btn-primary {
   background-color: var(--primary-main);
   border: 0.1rem solid var(--primary-main);
-  color: white;
+  color: var(--white);
 }
 .btn-primary:hover {
   background-color: var(--primary-dark);
+  transform: translateY(-3px);
 }
 
 .btn-secondary {
   background-color: var(--secondary-main);
   border-color: var(--secondary-main);
-  color: white;
+  color: var(--white);
   outline: 0;
 }
 
 .btn-secondary:hover {
   background-color: var(--secondary-dark);
+  transform: translateY(-3px);
 }
 .btn-error {
   background-color: var(--error-main);
   border-color: var(--error-main);
-  color: white;
+  color: var(--white);
   outline: 0;
 }
 .btn-error:hover {
   background-color: var(--error-dark);
+  transform: translateY(-3px);
 }
 .btn-warning {
   background-color: var(--warning-main);
   border-color: var(--warning-main);
-  color: white;
+  color: var(--white);
+  outline: 0;
+}
+
+.btn-warning:hover {
+  background-color: var(--warning-dark);
+  transform: translateY(-3px);
+}
+.btn-warning {
+  background-color: var(--warning-main);
+  border-color: var(--warning-main);
+  color: var(--white);
   outline: 0;
 }
 
@@ -84,7 +96,7 @@ input[type="reset"] {
   /* TODO: need to remove this width */
 }
 .btn-outline-primary:hover {
-  color: white;
+  color: var(--white);
   background-color: var(--primary-main);
 }
 
@@ -95,7 +107,7 @@ input[type="reset"] {
 }
 
 .btn-outline-secondary:hover {
-  color: white;
+  color: var(--white);
   background-color: var(--secondary-main);
 }
 
@@ -106,25 +118,40 @@ input[type="reset"] {
 }
 
 .btn-outline-error:hover {
-  color: white;
+  color: var(--white);
   background-color: var(--error-main);
 }
 
 /* special buttons */
-
 .btn-link {
+  box-sizing: border-box;
   background-color: transparent;
   text-decoration: none;
   border: none;
+  cursor: pointer;
 }
 
-.btn-link:hover {
-  background-color: rgba(var(--primary-light), 0.04);
-  border-color: initial;
-  text-decoration: underline;
+.btn-link-primary:hover {
+  background-color: var(--primary-ultra);
+  color: var(--primary-dark);
 }
 
-.btn-icon {
+.btn-link-secondary:hover {
+  background-color: var(--secondary-ultra);
+  color: var(--secondary-dark);
+}
+
+.btn-link-warning:hover {
+  background-color: var(--warning-ultra);
+  color: var(--warning-dark);
+}
+
+.btn-link-success:hover {
+  background-color: var(--success-ultra);
+  color: var(--success-dark);
+}
+
+.icon-btn {
   border-radius: 50%;
   border: none;
   background-color: initial;
@@ -136,10 +163,12 @@ input[type="reset"] {
   border-radius: 50%;
   background-color: var(--primary-main);
   box-shadow: 1px 1px 2px;
-  color: white;
+  color: var(--white);
   height: 3.5rem;
   width: 3.5rem;
   font-size: 1.2rem;
+  padding: 5px;
+  line-height: 1.5rem;
 }
 
 .btn-fab-secondary {
@@ -152,5 +181,17 @@ input[type="reset"] {
 
 .btn-fab:hover {
   box-shadow: 2px 1px 8px 0px rgba(0, 0, 0, 0.75);
-  color: white;
+  color: var(--white);
+}
+
+.btn-icon {
+  width: 0.9em;
+  height: 0.9em;
+  fill: currentColor;
+  margin-right: 0.5em;
+}
+
+.btn-icon.end {
+  margin-right: 0;
+  margin-left: 0.5em;
 }

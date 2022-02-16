@@ -1,6 +1,6 @@
 .alert {
   border-radius: 4px;
-  color: white;
+  color: var(--white);
   display: inline-block;
   margin: 0.5rem;
   padding: 1rem 2.2rem 1rem 1.5rem;
@@ -25,7 +25,7 @@
 }
 
 .alert > .close .fa {
-  color: white;
+  color: var(--white);
 }
 
 .alert-primary {

@@ -16,11 +16,22 @@
       href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css"
     />
   </head>
+
   <body>
+  
     <div class="container">
-   <section id="alert">
+     <section>
+       <h2 class="h2">Rating </h2>
+      <pre>
+        <code class="language-html">
+          <div class="stars" style="--rating:3.5;"></div>
+        </code>
+      </pre> 
+      <div class="stars" style="--rating:3.5; background-color: rebeccapurple;"></div>
+     </section>
+     <section id="alert">
     <h2 class="h2">Alert</h2>
-    <p class="description">An alert is a simple colored block meant to draw the attention to the user about something. As such, it can be used as a pinned alert in the corner of the viewport. And it has close button to dimiss it.</p>
+    <div class="description">An alert is a simple colored block meant to draw the attention to the user about something. As such, it can be used as a pinned alert in the corner of the viewport. And it has close button to dimiss it.</div>
     <pre>
       <code class="language-html">
       <div class="alert alert-primary">
@@ -52,30 +63,65 @@
       </div>
     </div>
     </section>
-    <section>
-    <h2 class="h2" id="avatar">Avatar</h2>
+    
+    <section id="avatar">
+    <h2 class="h2">Avatar</h2>
     <div>
-      <img class="avatar" src="https://picsum.photos/200/300/" alt="avatar" />
+    
+      <pre>
+      <code class="language-html">
+          <img
+            class="avatar avatar-sm"
+            src="https://picsum.photos/200/300/"
+            alt="avatar"
+          />
+
+          <img
+            class="avatar"
+            src="https://picsum.photos/200/300/"
+            alt="avatar"
+          />
+
+          <img
+            class="avatar avatar-md"
+            src="https://picsum.photos/200/300/"
+            alt="avatar"
+          />
+
+          <img
+            class="avatar avatar-lg"
+            src="https://picsum.photos/200/300/"
+            alt="avatar"
+          />
+      </code>
+      </pre>
+
+      <img class="avatar avatar-sm m-1" src="https://picsum.photos/200/300/" alt="avatar" />
 
       <img
-        class="avatar avatar-sm"
+        class="avatar m-1"
         src="https://picsum.photos/200/300/"
         alt="avatar"
       />
 
       <img
-        class="avatar avatar-md"
+        class="avatar avatar-md m-1"
         src="https://picsum.photos/200/300/"
         alt="avatar"
       />
 
       <img
-        class="avatar avatar-lg"
+        class="avatar avatar-lg m-1"
         src="https://picsum.photos/200/300/"
         alt="avatar"
       />
     </div>
-    <h2 id="button">Button</h3>
+    </section>
+
+   <section id="button">
+    <h2 class="h2">Button</h3>    
+  <pre>
+    <code class="language-html">
     <div>
       <button class="btn btn-primary">Button</button>
       <button class="btn btn-secondary">Button</button>
@@ -93,10 +139,42 @@
       <button class="btn btn-fab btn-fab-secondary"><i class="far fa-plus"></i></button>
       <button class="btn btn-fab btn-fab-error"><i class="far fa-plus"></i></button>
     </div>
-    </section>
-    <section>
-    <h2 class="h2">Badge</h2>
+    </code>
+    </pre>  
     <div>
+      <button class="btn btn-primary">Button</button>
+      <button class="btn btn-secondary">Button</button>
+      <button class="btn btn-error">Button</button>
+      <button class="btn btn-info">Button</button>
+    </div>
+
+    <div class="my-1">
+      <button class="btn btn-outline-primary">Button</button>
+      <button class="btn btn-outline-secondary">Button</button>
+      <button class="btn btn-outline-error">Button</button>
+      <button class="btn btn-link">Button</button>
+    </div>
+    
+    <div class="my-1">
+      <button class="btn btn-fab"><i class="fas fa-plus"></i></button>
+      <button class="btn btn-fab btn-fab-secondary"><i class="fas fa-plus"></i></button>
+      <button class="btn btn-fab btn-fab-error"><i class="fas fa-plus"></i></button>
+    </div>
+
+    <div class="my-1">
+    <button class="btn btn-outline-secondary">
+      <i class="fas fa-plus btn-icon"></i> Lorem, ipsum.
+    </button>
+    <button class="btn btn-outline-primary">
+      Lorem, ipsum. <i class="fas fa-plus btn-icon end"></i>
+    </button>
+    </div>
+   </section>
+
+   <section id="badge"> 
+   <h2 class="h2">Badge</h2>
+   <pre><code class="language-html">
+     <div>
       <span class="badge badge-text">0</span>
       <span class="badge badge-text">10</span>
       <span class="badge badge-text">100</span>
@@ -112,28 +190,48 @@
       <span class="badge"></span>      
       <span class="badge badge-away"></span>
     </div>
-    </section>
-    <section>
-    <h2 class="h2">Card</h2>
+   </code></pre> 
+   <div>
+      <span class="badge badge-text">0</span>
+      <span class="badge badge-text">10</span>
+      <span class="badge badge-text">100</span>
+      <span class="badge badge-text">10+</span>
+      <span class="badge badge-text badge-outlined">10+</span>
+    </div>
+    <div style="margin-top: 2rem;">
+      <span class="badge badge-online"></span>
+      <span class="badge"></span>      
+      <span class="badge badge-away"></span>
+    </div>
+</section>
+<section id="card">
+  <h2 class="h2">Card</h2>
+  <pre><code class="language-html">
+    <div class="card">
+      Lorem ipsum dolor sit amet.
+    </div>
+  </code></pre>
+</section>  
+      
     <h3>Shadows</h3>
      <div class="card shadow-xs">
         <div class="card-media">
-          <h2>Title</h2>
+          <h2 class="h2">Title</h2>
         </div>
       </div>
       <div class="card shadow-sm">
         <div class="card-media">
-          <h2>Title</h2>
+          <h2 class="h2">Title</h2>
         </div>
       </div>
       <div class="card shadow-md">
         <div class="card-media">
-          <h2>Title</h2>
+          <h2 class="h2">Title</h2>
         </div>
       </div>
       <div class="card shadow-lg">
         <div class="card-media">
-          <h2>Title</h2>
+          <h2 class="h2">Title</h2>
         </div>
       </div>
    
@@ -162,9 +260,9 @@
               <button class="btn btn-link">Submit</button>
             </div>
             <div class="icons flex">
-              <button class="btn-icon"><i class="far fa-heart"></i></button>
-              <button class="btn-icon"><i class="fa fa-share"></i></button>
-              <button class="btn-icon">
+              <button class="icon-btn"><i class="far fa-heart"></i></button>
+              <button class="icon-btn"><i class="fa fa-share"></i></button>
+              <button class="icon-btn">
                 <i class="far fa-comment-dots"></i>
               </button>
             </div>
@@ -188,9 +286,9 @@
               <button class="btn btn-link">Submit</button>
             </div>
             <div class="icons flex">
-              <button class="btn-icon"><i class="far fa-heart"></i></button>
-              <button class="btn-icon"><i class="fa fa-share"></i></button>
-              <button class="btn-icon">
+              <button class="icon-btn"><i class="far fa-heart"></i></button>
+              <button class="icon-btn"><i class="fa fa-share"></i></button>
+              <button class="icon-btn">
                 <i class="far fa-comment-dots"></i>
               </button>
             </div>
@@ -198,22 +296,52 @@
         </div>
       </div>
       </section>
+      
       <secton>
       <h2 class="h2">Inputs</h2>
-      <div class="input-wrapper">
+      <pre><code class="language-html"><div class="input-wrapper">
         <label for="firstName">First Name</label>
-        <input type="text"class="input"  placeholder="FirstName" />
+        <input type="text" class="input" placeholder="FirstName" />
       </div>
       <div class="input-wrapper success">
         <label for="firstName">First Name</label>
-        <input type="text"class="input"  placeholder="FirstName" />
+        <input type="text" class="input" placeholder="FirstName" />
       </div>
       <div class="input-wrapper is-invalid">
         <label for="firstName">First Name</label>
-        <input type="text"class="input"  placeholder="FirstName" />
+        <input type="text" class="input" placeholder="FirstName" />
+        <span class="error-msg">color text to show that</span>
+      </div></code></pre>
+      
+      <div class="input-wrapper">
+        <label for="firstName">First Name</label>
+        <input type="text" class="input" placeholder="FirstName" />
+      </div>
+      <div class="input-wrapper success">
+        <label for="firstName">First Name</label>
+        <input type="text" class="input" placeholder="FirstName" />
+      </div>
+      <div class="input-wrapper is-invalid">
+        <label for="firstName">First Name</label>
+        <input type="text" class="input" placeholder="FirstName" />
         <span class="error-msg">color text to show that</span>
       </div>
+      <section id="image">
       <h2 class="h2">Image Responsive</h2>
+      <pre>
+        <code class="language-html">
+        <div class="img-wrapper">
+        <img class="img-responsive h-200" src="https://picsum.photos/400/300/" alt="avatar" />
+      </div>
+       <div class="img-wrapper">
+        <img class="img-thumbnail" src="https://picsum.photos/400/300/" alt="avatar" />
+      </div>
+       <div class="img-wrapper">
+        <img class="img-round" src="https://picsum.photos/400/300/" alt="avatar" />
+      </div>    
+    </code>
+  </pre>
+
       <div class="img-wrapper">
         <img class="img-responsive h-200" src="https://picsum.photos/400/300/" alt="avatar" />
       </div>
@@ -223,11 +351,29 @@
        <div class="img-wrapper">
         <img class="img-round" src="https://picsum.photos/400/300/" alt="avatar" />
       </div>
-      </secton>
+    </secton>
 
-      <section>
+    <section>
         <h2 class="h2">Text Utilities</h2>
-        <h3 class="h3">Headings</h2>
+        <pre><code class="language-html">
+          <div class="hero">Lorem ipsum dolor.</div>
+          <h1 class="h1">Lorem ipsum dolor sit amet.</h1>
+          <h2 class="h2">Lorem ipsum dolor sit amet. </h2>
+          <h3 class="h3">Lorem ipsum dolor sit amet.</h3>
+          <h4 class="h4">Lorem ipsum dolor sit amet.</h4>
+          <h5 class="h5">Lorem ipsum dolor sit amet.</h5>
+          <h6 class="h6">Lorem ipsum dolor sit amet.</h6>
+
+          <div class="text-lg py-1">Lorem ipsum dolor sit amet.</div>
+          <div class="text-md py-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, consequuntur.</div>
+          <div class="text-sm py-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, deserunt.</div>
+          <div class="text-xs py-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, ut.</div>
+
+          <div class="text-primary py-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, qui?</div>
+          <div class="text-secondary py-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, in.</div>
+          <div class="text-warning py-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam, velit.</div>
+        </code></pre>
+        
         <div>
           <div class="hero">Lorem ipsum dolor.</div>
           <h1 class="h1">Lorem ipsum dolor sit amet.</h1>
@@ -247,6 +393,65 @@
           <div class="text-warning py-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam, velit.</div>
           <div class="text-error py-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, tempora.</div>
           <div class="text-success py-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, eligendi?</div>
+        </div>
+      </section>
+
+      <section id="modal">
+        <h2 class="h2">Modal</h2>
+        <pre><code class="language-html">
+        <div class="modal">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit natus quia possimus, modi quis impedit, porro ratione doloremque exercitationem soluta ad repellat nemo placeat? Voluptatem a ullam rem voluptatibus necessitatibus!
+        </div>
+
+        <div class="modal-overlay closed"></div>  
+        </code></pre>
+        <div class="modal closed">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit natus quia possimus, modi quis impedit, porro ratione doloremque exercitationem soluta ad repellat nemo placeat? Voluptatem a ullam rem voluptatibus necessitatibus!
+        </div>
+        <div class="modal-overlay closed"></div>  
+      </section>
+      
+      <section id="grid">
+      <h2 class="h2">Grid</h2>
+      <pre>
+      <code class="language-html">
+        <!-- min width of the grid cell set 250px default  -->
+      <div class="responsive-grid my-1">
+        <div class="child">child 1</div>
+        <div class="child">child 2</div>
+        <div class="child">child 3</div>
+        <div class="child">child 4</div>
+        <div class="child">child 5</div>
+        <div class="child">child 6</div>
+        </div>
+
+        <!-- override default cell width -->
+        <div class="responsive-grid my-1" style="--min-width:150px">
+        <div class="child">child 1</div>
+        <div class="child">child 2</div>
+        <div class="child">child 3</div>
+        <div class="child">child 4</div>
+        <div class="child">child 5</div>
+        <div class="child">child 6</div>
+        </div>
+      </code>
+    </pre>        
+       <div class="responsive-grid my-1">
+        <div class="child">child 1</div>
+        <div class="child">child 2</div>
+        <div class="child">child 3</div>
+        <div class="child">child 4</div>
+        <div class="child">child 5</div>
+        <div class="child">child 6</div>
+        </div>
+
+        <div class="responsive-grid my-1" style="--min-width:150px">
+        <div class="child">child 1</div>
+        <div class="child">child 2</div>
+        <div class="child">child 3</div>
+        <div class="child">child 4</div>
+        <div class="child">child 5</div>
+        <div class="child">child 6</div>
         </div>
       </section>
     </div>

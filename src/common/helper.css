@@ -1,102 +1,24 @@
 /* alignments */
-.flex {
-  display: flex;
-}
-
-.flex-inline {
-  display: inline-flex;
-}
-
-.flex-direction-row {
-  flex-direction: row;
-}
-
-.flex-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.flex-center-y {
-  display: flex;
-  align-items: center;
-}
-
-.flex-center-x {
-  display: flex;
-  justify-content: center;
-}
-
-.flex-wrap {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.flex-column {
-  display: flex;
-  flex-direction: column;
-}
-
-.flex-space-around {
-  justify-content: space-around;
-}
-
-.flex-space-between {
-  justify-content: space-between;
-}
-.flex-ai-center {
-  align-items: center;
-}
-
-.flex-center-column {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-.flex-gap-0 {
-  gap: 0.5rem;
-}
-.flex-gap {
-  gap: 1rem;
-}
-
-.flex-gap-2 {
-  gap: 2rem;
-}
-
-.flex-gap-3 {
-  gap: 3rem;
-}
-
-.flex-gap-4 {
-  gap: 4rem;
-}
-
-.flex-gap-5 {
-  gap: 5rem;
-}
-
-.flex-grow-1 {
-  flex-grow: 1;
-}
-
 .shadow-xs {
-  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
-    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12) !important;
+  box-shadow: 0px 2px 1px -1px rgba(var(--black-rgb), 0.2),
+    0px 1px 1px 0px rgba(var(--black-rgb), 0.14),
+    0px 1px 3px 0px rgba(var(--black-rgb), 0.12);
 }
 
 .shadow-sm {
-  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
-    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12) !important;
+  box-shadow: 0px 3px 1px -2px rgba(var(--black-rgb), 0.2),
+    0px 2px 2px 0px rgba(var(--black-rgb), 0.14),
+    0px 1px 5px 0px rgba(var(--black-rgb), 0.12);
 }
 .shadow-md {
-  box-shadow: 0px 3px 3px -2px rgba(0, 0, 0, 0.2),
-    0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 1px 8px 0px rgba(0, 0, 0, 0.12) !important;
+  box-shadow: 0px 3px 3px -2px rgba(var(--black-rgb), 0.2),
+    0px 3px 4px 0px rgba(var(--black-rgb), 0.14),
+    0px 1px 8px 0px rgba(var(--black-rgb), 0.12);
 }
 .shadow-lg {
-  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
-    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12) !important;
+  box-shadow: 0px 2px 4px -1px rgba(var(--black-rgb), 0.2),
+    0px 4px 5px 0px rgba(var(--black-rgb), 0.14),
+    0px 1px 10px 0px rgba(var(--black-rgb), 0.12);
 }
 .p-1 {
   padding: 1rem;

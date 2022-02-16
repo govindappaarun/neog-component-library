@@ -27,3 +27,18 @@
 .h-200 {
   height: 200px;
 }
+
+/* grid demonstation */
+.child {
+  background-color: blueviolet;
+  text-align: center;
+  color: var(--white);
+  line-height: 100px;
+}
+
+.child:nth-child(5) {
+  background-color: red;
+  grid-column-start: 1;
+}
+
+/* grid demonstration */

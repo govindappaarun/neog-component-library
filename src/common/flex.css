@@ -1,0 +1,84 @@
+/* All the flex related properties */
+.flex {
+  display: flex;
+}
+
+.flex-inline {
+  display: inline-flex;
+}
+
+.flex-direction-row {
+  flex-direction: row;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-center-y {
+  display: flex;
+  align-items: center;
+}
+
+.flex-center-x {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-space-around {
+  justify-content: space-around;
+}
+
+.flex-space-between {
+  justify-content: space-between;
+}
+
+.flex-ai-center {
+  align-items: center;
+}
+
+.flex-center-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.flex-gap-0 {
+  gap: 0.5rem;
+}
+
+.flex-gap {
+  gap: 1rem;
+}
+
+.flex-gap-2 {
+  gap: 2rem;
+}
+
+.flex-gap-3 {
+  gap: 3rem;
+}
+
+.flex-gap-4 {
+  gap: 4rem;
+}
+
+.flex-gap-5 {
+  gap: 5rem;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
