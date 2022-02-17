@@ -1,0 +1,47 @@
+.navbar {
+  align-items: center;
+  display: flex;
+  font-size: 1.2rem;
+  min-height: 4rem;
+  box-shadow: 1px 5px 5px 0px rgba(var(--black-rgb), 0.5);
+  padding: 0 1.8rem;
+}
+
+.navbar .nav-left,
+.navbar .nav-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav-right {
+  margin-left: auto;
+}
+
+.nav-left > i,
+.nav-right > i {
+  cursor: pointer;
+  padding: 0 10px;
+  margin: 0 5px;
+  color: currentColor;
+}
+
+.navbar-sticky {
+  position: sticky;
+  top: 0;
+}
+
+.navbar-light {
+  background-color: rgba(var(--black-rgb), 0.2);
+  color: var(--black);
+}
+
+.navbar-dark {
+  background-color: rgba(var(--black-rgb), 0.8);
+  color: var(--white);
+}
+
+.navbar-primary {
+  background-color: var(--primary-light);
+  color: var(--white);
+}

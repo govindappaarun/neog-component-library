@@ -10,10 +10,29 @@ input with icon prefix
 .input-wrapper {
   display: flex;
   flex-direction: column;
-  margin: 0.5rem 0.5rem 1.2rem 0rem;
   position: relative;
   gap: 0.4rem;
 }
+
+.input-wrapper.w-icon {
+  position: relative;
+  flex-direction: row;
+}
+
+.input-wrapper.w-icon > i {
+  color: var(--black);
+  font-size: 1.25rem;
+  left: 1.25rem;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  z-index: 10;
+}
+.input-wrapper.w-icon .input {
+  flex-grow: 1;
+  padding-left: 3.4rem;
+}
+
 .input-wrapper .error-msg {
   font-size: 0.85rem;
 }

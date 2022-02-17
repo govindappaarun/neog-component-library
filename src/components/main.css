@@ -16,8 +16,12 @@
 @import url("./grid/index.css");
 @import url("./input/index.css");
 @import url("./image/index.css");
+
+@import url("./list/index.css");
 @import url("./modal/index.css");
 @import url("./rating/index.css");
+@import url("./snackbar/index.css");
+@import url("./navbar/index.css");
 
 /* Typography classes */
 @import url("./typography/index.css");
