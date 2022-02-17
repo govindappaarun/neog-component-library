@@ -14,12 +14,12 @@ input with icon prefix
   gap: 0.4rem;
 }
 
-.input-wrapper.w-icon {
+.input-wrapper.with-icon {
   position: relative;
   flex-direction: row;
 }
 
-.input-wrapper.w-icon > i {
+.input-wrapper.with-icon > i {
   color: var(--black);
   font-size: 1.25rem;
   left: 1.25rem;
@@ -28,7 +28,8 @@ input with icon prefix
   position: absolute;
   z-index: 10;
 }
-.input-wrapper.w-icon .input {
+
+.input-wrapper.with-icon .input {
   flex-grow: 1;
   padding-left: 3.4rem;
 }
