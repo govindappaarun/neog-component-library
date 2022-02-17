@@ -20,18 +20,27 @@
     0px 4px 5px 0px rgba(var(--black-rgb), 0.14),
     0px 1px 10px 0px rgba(var(--black-rgb), 0.12);
 }
+
 .p-1 {
   padding: 1rem;
 }
+
 .px-1 {
   padding: 0 1.25rem;
 }
+
 .py-1 {
   padding: 1rem 0;
 }
+
 .my-1 {
   margin: 1rem 0;
 }
+
+.my-5 {
+  margin: 5rem 0;
+}
+
 .p-20 {
   padding: 20px;
 }
@@ -39,15 +48,19 @@
 .badge-color-1 {
   background-color: var(--primary-ultra);
 }
+
 .badge-color-2 {
   background-color: var(--secondary-ultra);
 }
+
 .badge-color-3 {
   background-color: var(--warning-ultra);
 }
+
 .badge-color-4 {
   background-color: var(--success-ultra);
 }
+
 .badge-color-5 {
   background-color: var(--error-ultra);
 }

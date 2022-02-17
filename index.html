@@ -18,17 +18,36 @@
   </head>
 
   <body>
-  
+    <nav class="navbar">
+      <div class="nav-left"><i class="fas fa-home"></i>Home</div>
+      <div class="nav-right">
+        <div class="input-wrapper with-icon">
+          <i class="fas fa fa-search"></i>
+          <input type="text" class="input" />
+        </div>
+        <i class="far fa-heart"></i>
+        <i class="far fa-bell"></i>
+        <i class="fas fa-cart-plus"></i>
+        <div class="btn btn-link btn-link-secondary">Logout</div>
+      </div>
+    </nav>
     <div class="container">
-     <section>
-       <h2 class="h2">Rating </h2>
+     <article id="rating">
+      <header>
+        <div class="h2">Rating </div>
+        <p>Provides provides option to collect the user feedback, on a scale of 1 to 5 user can rate the item, It also helps user to understand over all rating for an existing product from ther users.</p>
+        <hr class="my-5">
+      </header>
+      <main>
       <pre>
         <code class="language-html">
           <div class="stars" style="--rating:3.5;"></div>
         </code>
       </pre> 
       <div class="stars" style="--rating:3.5; background-color: rebeccapurple;"></div>
-     </section>
+      </main>
+    </article>
+
      <section id="alert">
     <h2 class="h2">Alert</h2>
     <div class="description">An alert is a simple colored block meant to draw the attention to the user about something. As such, it can be used as a pinned alert in the corner of the viewport. And it has close button to dimiss it.</div>
@@ -119,7 +138,7 @@
     </section>
 
    <section id="button">
-    <h2 class="h2">Button</h3>    
+    <h2 class="h2">Button</h2>    
   <pre>
     <code class="language-html">
     <div>
@@ -336,17 +355,17 @@
       <h2 class="h2">Image Responsive</h2>
       <pre>
         <code class="language-html">
+          <div class="img-wrapper">
+          <img class="img-responsive h-200" src="https://picsum.photos/400/300/" alt="avatar" />
+        </div>
         <div class="img-wrapper">
-        <img class="img-responsive h-200" src="https://picsum.photos/400/300/" alt="avatar" />
-      </div>
-       <div class="img-wrapper">
-        <img class="img-thumbnail" src="https://picsum.photos/400/300/" alt="avatar" />
-      </div>
-       <div class="img-wrapper">
-        <img class="img-round" src="https://picsum.photos/400/300/" alt="avatar" />
-      </div>    
-    </code>
-  </pre>
+          <img class="img-thumbnail" src="https://picsum.photos/400/300/" alt="avatar" />
+        </div>
+        <div class="img-wrapper">
+          <img class="img-round" src="https://picsum.photos/400/300/" alt="avatar" />
+        </div>    
+        </code>
+      </pre>
 
       <div class="img-wrapper">
         <img class="img-responsive h-200" src="https://picsum.photos/400/300/" alt="avatar" />
@@ -357,7 +376,7 @@
        <div class="img-wrapper">
         <img class="img-round" src="https://picsum.photos/400/300/" alt="avatar" />
       </div>
-    </secton>
+    </section>
 
     <section>
         <h2 class="h2">Text Utilities</h2>
