@@ -18,9 +18,11 @@
   margin-left: auto;
 }
 
+.navbar a {
+  text-decoration: none;
+}
 .nav-left > i,
 .nav-right > i {
-  cursor: pointer;
   padding: 0 10px;
   margin: 0 5px;
   color: currentColor;

@@ -1,10 +1,71 @@
 @import url("./src/components/main.css");
 
+<<<<<<< HEAD
+=======
+body {
+  color: #757575;
+}
+
+.h1,
+.h2,
+.h3 {
+  color: var(--black);
+}
+
+pre code.hljs {
+  padding: 0;
+}
+
+article header {
+  margin-top: 5rem;
+}
+article main {
+  margin-bottom: 10rem;
+}
+>>>>>>> 39c0a18 (fix component navigation)
 .container {
   max-width: 720px;
   margin: 0 auto;
 }
 
+<<<<<<< HEAD
+=======
+aside > ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  position: sticky;
+  top: 65px;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+}
+
+aside li {
+  padding: 10px 5px;
+  letter-spacing: 1px;
+}
+
+aside li:hover {
+  cursor: pointer;
+  background: var(--success-ultra);
+}
+
+aside li > a {
+  display: block;
+  text-decoration: none;
+  color: rgba(var(--black-rgb), 0.75);
+  padding-left: 2rem;
+}
+
+li.list-head {
+  cursor: pointer;
+  color: var(--black);
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+>>>>>>> 39c0a18 (fix component navigation)
 .btn {
   margin: 5px;
 }
