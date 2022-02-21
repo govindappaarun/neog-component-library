@@ -1,29 +1,91 @@
-.container {
-  max-width: 720px;
-  margin: 0 auto;
+@import url("./src/components/main.css");
+
+body {
+  color: #757575;
 }
+
+.h1,
+.h2,
+.h3 {
+  color: var(--black);
+}
+
+pre code.hljs {
+  padding: 0;
+}
+
+article header {
+  margin-top: 5rem;
+}
+
+article main {
+  margin-bottom: 10rem;
+}
+
+aside > ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  position: sticky;
+  top: 65px;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  background-color: var(--white);
+}
+
+aside li {
+  padding: 10px 5px;
+  letter-spacing: 1px;
+}
+
+aside li:hover {
+  cursor: pointer;
+  background: var(--success-ultra);
+}
+
+aside li > a {
+  display: block;
+  text-decoration: none;
+  color: rgba(var(--black-rgb), 0.75);
+  padding-left: 2rem;
+}
+
+li.list-head {
+  cursor: pointer;
+  color: var(--black);
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
 .btn {
   margin: 5px;
 }
+
 .card {
   margin: 1rem;
 }
+
 .card-media {
   position: relative;
 }
+
 .card-media .badge {
   position: absolute;
   top: -5px;
   right: -5px;
   opacity: 0;
 }
+
 .card-media:hover .badge {
   opacity: 1;
   transition: opacity 0.2s;
 }
+
 .img-wrapper {
   width: 40vw;
 }
+
 .h-200 {
   height: 200px;
 }
@@ -41,4 +103,99 @@
   grid-column-start: 1;
 }
 
-/* grid demonstration */
+hr {
+  background-color: rgba(var(--black-rgb), 0.3);
+}
+
+header p {
+  line-height: 1.5rem;
+}
+
+.container {
+  display: grid;
+  grid-template-areas: "header header header header" "sidebar main main main";
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+}
+
+.main {
+  grid-area: main;
+  margin: 0 2rem;
+}
+
+aside {
+  grid-area: sidebar;
+}
+
+.navbar {
+  grid-area: header;
+}
+
+.input-wrapper {
+  margin: 2rem 1rem;
+}
+
+.container article {
+  border-bottom: 2px solid var(--grey-light);
+}
+
+.container article > header {
+  padding-top: 5rem;
+}
+
+.responsive-grid {
+  max-width: 35rem;
+  margin: 2rem 5rem;
+}
+
+.container > aside {
+  max-width: 20rem;
+}
+
+@media screen and (max-width: 720px) {
+  .container {
+    grid-template-areas:
+      "header header header"
+      "sidebar sidebar sidebar"
+      "main main main"
+      "main main main";
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .container aside {
+    max-width: none;
+    position: sticky;
+    top: 5rem;
+  }
+
+  .container > aside ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .container > aside ul > * {
+    flex-shrink: 0;
+  }
+
+  .container > aside a {
+    padding: 1rem 1.5rem;
+  }
+
+  .container > aside li {
+    padding: 0 5px;
+    border-right: 1px solid;
+  }
+
+  .container > aside li,
+  .container > aside a {
+    display: inline-block;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  article > header {
+    margin-top: 7rem;
+  }
+}

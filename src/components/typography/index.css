@@ -55,19 +55,27 @@
   color: var(--primary-main);
   background-color: var(--primary-ultra);
 }
+
 .text-secondary {
   color: var(--secondary-main);
   background-color: var(--secondary-ultra);
 }
+
 .text-warning {
   color: var(--warning-main);
   background-color: var(--warning-ultra);
 }
+
 .text-success {
   color: var(--success-main);
   background-color: var(--success-ultra);
 }
+
 .text-error {
   color: var(--error-main);
   background-color: var(--error-ultra);
+}
+
+.text-uppercase {
+  text-transform: uppercase;
 }
