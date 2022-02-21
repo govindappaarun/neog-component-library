@@ -21,6 +21,7 @@
 .hero {
   font-size: 60px;
   line-height: 4.7rem;
+  color: var(--black);
 }
 
 .text-xs {

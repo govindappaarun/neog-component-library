@@ -6,7 +6,10 @@ body {
 
 .h1,
 .h2,
-.h3 {
+.h3,
+.h4,
+.h5,
+.h6 {
   color: var(--black);
 }
 
@@ -198,4 +201,26 @@ aside {
   article > header {
     margin-top: 7rem;
   }
+}
+
+/* welcome page */
+#welcomepage .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+  height: 100vh;
+}
+
+#welcomepage .container .left .hero {
+  max-width: 15ch;
+  margin: 0 auto;
+}
+
+#welcomepage .container .get-started {
+  margin-top: 7.5rem;
+}
+
+#welcome {
+  background-color: var(--white-cream);
 }
