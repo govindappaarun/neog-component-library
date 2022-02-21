@@ -5,6 +5,7 @@
   min-height: 4rem;
   box-shadow: 1px 5px 5px 0px rgba(var(--black-rgb), 0.5);
   padding: 0 1.8rem;
+  z-index: 1010;
 }
 
 .navbar .nav-left,
@@ -20,7 +21,9 @@
 
 .navbar a {
   text-decoration: none;
+  color: inherit;
 }
+
 .nav-left > i,
 .nav-right > i {
   padding: 0 10px;

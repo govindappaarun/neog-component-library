@@ -11,6 +11,10 @@
   padding: 1.25rem;
 }
 
+.p-21 {
+  padding: 0.8rem 1.25rem;
+}
+
 .m-auto {
   margin: 0 auto;
 }
@@ -34,6 +38,9 @@
 .m-2 {
   margin: 2rem;
 }
+.m-5 {
+  margin: 5rem;
+}
 
 .mx-2 {
   margin: 0 2rem;
@@ -41,6 +48,10 @@
 
 .my-2 {
   margin: 2rem 0;
+}
+
+.my-5 {
+  margin: 0 5rem;
 }
 
 .h-100 {

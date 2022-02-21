@@ -89,13 +89,7 @@ input[type="reset"] {
   border: 1px solid;
   color: var(--primary-main);
 }
-.btn-outline {
-  color: var(--black);
-  border: thin solid var(--grey-light);
-  background-color: transparent;
-  min-width: 200px;
-  /* TODO: need to remove this width */
-}
+
 .btn-outline-primary:hover {
   color: var(--white);
   background-color: var(--primary-main);
@@ -183,18 +177,6 @@ input[type="reset"] {
 .btn-fab:hover {
   box-shadow: 2px 1px 8px 0px rgba(0, 0, 0, 0.75);
   color: var(--white);
-}
-
-.btn-icon {
-  width: 0.9em;
-  height: 0.9em;
-  fill: currentColor;
-  margin-right: 0.5em;
-}
-
-.btn-icon.end {
-  margin-right: 0;
-  margin-left: 0.5em;
 }
 
 .btn-icon {
