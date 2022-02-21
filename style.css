@@ -1,7 +1,5 @@
 @import url("./src/components/main.css");
 
-<<<<<<< HEAD
-=======
 body {
   color: #757575;
 }
@@ -22,14 +20,11 @@ article header {
 article main {
   margin-bottom: 10rem;
 }
->>>>>>> 39c0a18 (fix component navigation)
 .container {
   max-width: 720px;
   margin: 0 auto;
 }
 
-<<<<<<< HEAD
-=======
 aside > ul {
   display: flex;
   flex-direction: column;
@@ -65,7 +60,6 @@ li.list-head {
   font-size: 1.25rem;
 }
 
->>>>>>> 39c0a18 (fix component navigation)
 .btn {
   margin: 5px;
 }
@@ -119,4 +113,19 @@ header p {
   line-height: 1.5rem;
 }
 
-/* grid demonstration */
+.container {
+  display: grid;
+  grid-template-areas: "header header header header" "sidebar main main main";
+}
+
+main.main {
+  grid-area: main;
+}
+
+aside {
+  grid-area: sidebar;
+}
+
+header {
+  grid-area: header;
+}
