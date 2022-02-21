@@ -199,3 +199,25 @@ aside {
     margin-top: 7rem;
   }
 }
+
+/* welcome page */
+#welcomepage .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+  height: 100vh;
+}
+
+#welcomepage .container .left .hero {
+  max-width: 15ch;
+  margin: 0 auto;
+}
+
+#welcomepage .container .get-started {
+  margin-top: 7.5rem;
+}
+
+#welcome {
+  background-color: var(--white-cream);
+}
