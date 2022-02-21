@@ -17,12 +17,9 @@ pre code.hljs {
 article header {
   margin-top: 5rem;
 }
+
 article main {
   margin-bottom: 10rem;
-}
-.container {
-  max-width: 720px;
-  margin: 0 auto;
 }
 
 aside > ul {
@@ -34,6 +31,7 @@ aside > ul {
   margin: 0;
   padding: 0;
   overflow-y: auto;
+  background-color: var(--white);
 }
 
 aside li {
@@ -116,16 +114,88 @@ header p {
 .container {
   display: grid;
   grid-template-areas: "header header header header" "sidebar main main main";
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
 }
 
-main.main {
+.main {
   grid-area: main;
+  margin: 0 2rem;
 }
 
 aside {
   grid-area: sidebar;
 }
 
-header {
+.navbar {
   grid-area: header;
+}
+
+.input-wrapper {
+  margin: 2rem 1rem;
+}
+
+.container article {
+  border-bottom: 2px solid var(--grey-light);
+}
+
+.container article > header {
+  padding-top: 5rem;
+}
+
+.responsive-grid {
+  max-width: 35rem;
+  margin: 2rem 5rem;
+}
+
+.container > aside {
+  max-width: 20rem;
+}
+
+@media screen and (max-width: 720px) {
+  .container {
+    grid-template-areas:
+      "header header header"
+      "sidebar sidebar sidebar"
+      "main main main"
+      "main main main";
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .container aside {
+    max-width: none;
+    position: sticky;
+    top: 5rem;
+  }
+
+  .container > aside ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .container > aside ul > * {
+    flex-shrink: 0;
+  }
+
+  .container > aside a {
+    padding: 1rem 1.5rem;
+  }
+
+  .container > aside li {
+    padding: 0 5px;
+    border-right: 1px solid;
+  }
+
+  .container > aside li,
+  .container > aside a {
+    display: inline-block;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  article > header {
+    margin-top: 7rem;
+  }
 }

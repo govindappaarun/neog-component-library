@@ -30,13 +30,15 @@
         </div>
       </nav>
 
+
       <!-- sidebar -->
       <aside>
         <ul>
           <li><a href="#">Getting Started</a></li>
           <li><a href="#">How to use</a></li>
-          <li class="list-head">Components</li>
+          <li class="list-head"><a href="javascript:;">Components</a></li>
           <li><a href="#alert">Alert</a></li>
+          <li><a href="#avatar">Avatar</a></li>
           <li><a href="#badge">Badge</a></li>
           <li><a href="#button">Button</a></li>
           <li><a href="#card">Card</a></li>
@@ -45,86 +47,90 @@
           <li><a href="#list">List</a></li>
           <li><a href="#modal">Modal</a></li>
           <li><a href="#navbar">Navbar</a></li>
+          <li><a href="#rating">Rating</a></li>
           <li><a href="#snackbar">Sanckbar</a></li>
-          <li><a href="#typograhy">Typography</a></li>
+          <li><a href="#typography">Typography</a></li>
         </ul>
       </aside>
       <!-- components documentation -->
-      <main class="main">
-        <!-- rating  -->
-        <article id="rating">
-          <header>
-            <div class="h2">Rating</div>
-            <p>
-              Provides provides option to collect the user feedback, on a scale
-              of 1 to 5 user can rate the items on the page, It also helps user to understand
-              over all rating for an existing product from ther users.
-            </p>
-          </header>
-          <main>
-            <pre class="language-html">
-        <code class="language-html">
-          <div class="stars" style="--rating:3.5;"></div>
-        </code>
-      </pre> 
-      <div class="stars" style="--rating:3.5; background-color: rebeccapurple;"></div>
-      </main>
+    <main class="main">  
+    <article id="alert">
+    <header>
+      <div class="h2">Alert</div>
+      <div class="description">
+      An alert is a simple colored block meant to draw the attention to the user
+      about something. As such, it can be used as a pinned alert in the corner
+      of the viewport. And it has close button to dimiss it.
+      </div>
+    </header>
+
+    <main>
+    <pre>
+    <code class="language-html">
+    <div class="alert alert-primary">
+    <button class="close"><i class="far fa-times"></i></button>
+    Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem
+    ipsum dolor.
+    </div>
+    </code>
+    </pre>
+
+    <div>
+    <div class="alert alert-primary">
+    <button class="close"><i class="far fa-times"></i></button>
+    Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem
+    ipsum dolor.
+    </div>
+    </div>
+    <div>
+    <div class="alert alert-secondary">
+    <button class="close"><i class="far fa-times"></i></button>
+    Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem
+    ipsum dolor.
+    </div>
+    </div>
+    <div>
+    <div class="alert alert-error">
+    <button class="close"><i class="far fa-times"></i></button>
+    Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem
+    ipsum dolor.
+    </div>
+    <div class="alert alert-warning">
+    <button class="close"><i class="far fa-times"></i></button>
+    Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem
+    ipsum dolor.
+    </div>
+    </div>
+    </main>
     </article>
 
-     <section id="alert">
-    <h2 class="h2">Alert</h2>
-    <div class="description">An alert is a simple colored block meant to draw the attention to the user about something. As such, it can be used as a pinned alert in the corner of the viewport. And it has close button to dimiss it.</div>
+    <!-- avatar -->
+    <article id="avatar">
+  <header>
+    <div class="h2">Avatar</div>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati
+      assumenda nesciunt dolorum repellendus unde suscipit inventore laborum!
+      Deleniti culpa sit odio sapiente, eaque atque dolorum, deserunt earum
+      eius, illo fugiat!
+    </p>
+  </header>
+  <main>
     <pre>
       <code class="language-html">
-      <div class="alert alert-primary">
-        <button class="close"><i class="far fa-times"></i></button>
-        Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem
-        ipsum dolor.
-      </div>
-     </code>
-    </pre>
-    <div>
-      <div class="alert alert-primary">
-        <button class="close"><i class="far fa-times"></i></button>
-        Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem
-        ipsum dolor.
-      </div>
-    </div>
-    <div>
-      <div class="alert alert-secondary">
-        <button class="close"><i class="far fa-times"></i></button>
-        Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem
-        ipsum dolor.
-      </div>
-    </div>
-    <div>
-      <div class="alert alert-error">
-        <button class="close"><i class="far fa-times"></i></button>
-        Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem
-        ipsum dolor.
-      </div>
-    </div>
-    </section>
-    
-    <section id="avatar">
-    <h2 class="h2">Avatar</h2>
-    <div>
-    
-      <pre>
-      <code class="language-html">
-          <img
+          <img loading="lazy"
             class="avatar avatar-sm"
             src="https://picsum.photos/200/300/"
             alt="avatar"
           />
 
-          <img
+          <img loading="lazy"
             class="avatar"
             src="https://picsum.photos/200/300/"
             alt="avatar"
           />
 
-          <img
+          <img loading="lazy"
             class="avatar avatar-md"
             src="https://picsum.photos/200/300/"
             alt="avatar"
@@ -138,31 +144,80 @@
       </code>
       </pre>
 
-      <img class="avatar avatar-sm m-1" src="https://picsum.photos/200/300/" alt="avatar" />
+    <img loading="lazy"
+      class="avatar avatar-sm m-1"
+      src="https://picsum.photos/200/300/"
+      alt="avatar"
+    />
 
-      <img
-        class="avatar m-1"
-        src="https://picsum.photos/200/300/"
-        alt="avatar"
-      />
+    <img loading="lazy" class="avatar m-1" src="https://picsum.photos/200/300/" alt="avatar" />
 
-      <img
-        class="avatar avatar-md m-1"
-        src="https://picsum.photos/200/300/"
-        alt="avatar"
-      />
+    <img loading="lazy"
+      class="avatar avatar-md m-1"
+      src="https://picsum.photos/200/300/"
+      alt="avatar"
+    />
 
-      <img
-        class="avatar avatar-lg m-1"
-        src="https://picsum.photos/200/300/"
-        alt="avatar"
-      />
+    <img loading="lazy"
+      class="avatar avatar-lg m-1"
+      src="https://picsum.photos/200/300/"
+      alt="avatar"
+    />
+  </main>
+</article>
+        
+<!-- badge -->
+<article id="badge">
+  <header>
+    <div class="h2">Badge</div>
+  </header>
+  <main>
+    <pre><code class="language-html">
+     <div>
+      <span class="badge badge-text">0</span>
+      <span class="badge badge-text">10</span>
+      <span class="badge badge-text">100</span>
+      <span class="badge badge-text">10+</span>
+      <span class="badge badge-text badge-outlined">10+</span>
+      <div class="text-badge text-primary">Lorem, ipsum</div>
     </div>
-    </section>
+    <div style="margin-top: 2rem;">
+      <span class="badge badge-online"></span>
+      <span class="badge"></span>      
+      <span class="badge badge-away"></span>
+    </div>
+   </code>
+  </pre>
+    <div>
+      <span class="badge badge-text">0</span>
+      <span class="badge badge-text">10</span>
+      <span class="badge badge-text">100</span>
+      <span class="badge badge-text">10+</span>
+      <span class="badge badge-text badge-outlined">10+</span>
+    </div>
+    <div style="margin-top: 2rem">
+      <span class="badge badge-online"></span>
+      <span class="badge"></span>
+      <span class="badge badge-away"></span>
+    </div>
+  </main>
+</article>
 
-   <section id="button">
-    <h2 class="h2">Button</h2>    
-  <pre>
+<!-- button -->
+
+<article id="button">
+  <header>
+    <div class="h2">Button</div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+      voluptas sed, dolore error optio vero. Nesciunt esse odio ad consequuntur
+      necessitatibus saepe amet sed, dolor exercitationem, architecto cupiditate
+      dicta illum quaerat, alias similique modi blanditiis. Aliquam atque
+      ducimus quia placeat officia error, consectetur beatae deleniti.
+    </p>
+  </header>
+  <main>
+    <pre>
     <code class="language-html">
     <div>
       <button class="btn btn-primary">Button</button>
@@ -211,87 +266,53 @@
       Lorem, ipsum. <i class="fas fa-plus btn-icon end"></i>
     </button>
     </div>
-   </section>
+  </main>
+</article>
 
-   <section id="badge"> 
-   <h2 class="h2">Badge</h2>
-   <pre><code class="language-html">
-     <div>
-      <span class="badge badge-text">0</span>
-      <span class="badge badge-text">10</span>
-      <span class="badge badge-text">100</span>
-      <span class="badge badge-text">10+</span>
-      <span class="badge badge-text badge-outlined">10+</span>
-
-      <div class="text-badge text-primary">Lorem, ipsum</div>
-
-
-    </div>
-    <div style="margin-top: 2rem;">
-      <span class="badge badge-online"></span>
-      <span class="badge"></span>      
-      <span class="badge badge-away"></span>
-    </div>
-   </code></pre>
-            <div>
-              <span class="badge badge-text">0</span>
-              <span class="badge badge-text">10</span>
-              <span class="badge badge-text">100</span>
-              <span class="badge badge-text">10+</span>
-              <span class="badge badge-text badge-outlined">10+</span>
-            </div>
-            <div style="margin-top: 2rem">
-              <span class="badge badge-online"></span>
-              <span class="badge"></span>
-              <span class="badge badge-away"></span>
-            </div>
-          </main>
-        </article>
-
-        <!-- Card -->
-        <article id="card">
-          <header>
-            <div class="h2">Card</div>
-            <p>
-              Card description goes here, Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Quia, similique natus. Quia ab ratione earum.
-            </p>
-          </header>
-          <main>
-            <pre>'
+<!-- card -->
+ <article id="card">
+    <header>
+      <div class="h2">Card</div>
+      <p>
+        Card description goes here, Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Quia, similique natus. Quia ab ratione earum.
+      </p>
+    </header>
+    <main>
+      <pre>
               <code class="language-html">
                 <div class="card">
                   Lorem ipsum dolor sit amet.
                 </div>
               </code>
             </pre>
-            <h3>Shadows</h3>
-            <div class="card shadow-xs">
-              <div class="card-media">
-                <h2 class="h2">Title</h2>
-              </div>
-            </div>
-            <div class="card shadow-sm">
-              <div class="card-media">
-                <h2 class="h2">Title</h2>
-              </div>
-            </div>
-            <div class="card shadow-md">
-              <div class="card-media">
-                <h2 class="h2">Title</h2>
-              </div>
-            </div>
-            <div class="card shadow-lg">
-              <div class="card-media">
-                <h2 class="h2">Title</h2>
-              </div>
-            </div>
+      <h3>Shadows</h3>
+      <div class="card shadow-xs">
+        <div class="card-media">
+          <div class="h2">Title</div>
+        </div>
+      </div>
+      <div class="card shadow-sm">
+        <div class="card-media">
+          <div class="h2">Title</div>
+        </div>
+      </div>
+      <div class="card shadow-md">
+        <div class="card-media">
+          <div class="h2">Title</div>
+        </div>
+      </div>
+      <div class="card shadow-lg">
+        <div class="card-media">
+          <div class="h2">Title</div>
+        </div>
+      </div>
 
       <div class="card shadow-1">
         <div class="card-body">
           <div class="card-media">
-           <div class="badge badge-text"><i class="far fa-heart"></i></div>
-            <img src="https://picsum.photos/200/300/" alt="avatar" />
+            <div class="badge badge-text"><i class="far fa-heart"></i></div>
+            <img loading="lazy" src="https://picsum.photos/200/300/" alt="avatar" />
           </div>
           <div class="card-header">
             <h2 class="card-title">Our Changing Planet</h2>
@@ -322,7 +343,11 @@
       <div class="card horizontal">
         <div class="card-body">
           <div class="card-media">
-            <img src="https://picsum.photos/200/300/" class="avatar" alt="avatar" />
+            <img loading="lazy"
+              src="https://picsum.photos/200/300/"
+              class="avatar"
+              alt="avatar"
+            />
           </div>
           <div class="card-header">
             <h2 class="card-title">Our Changing Planet</h2>
@@ -345,130 +370,16 @@
           </div>
         </div>
       </div>
-      </section>
-      
-      <section id="input">
-      <h2 class="h2">Inputs</h2>
-      <pre><code class="language-html"><div class="input-wrapper">
-        <label for="firstName">First Name</label>
-        <input type="text" class="input" placeholder="FirstName" />
-      </div>
-      <div class="input-wrapper success">
-        <label for="firstName">First Name</label>
-        <input type="text" class="input" placeholder="FirstName" />
-      </div>
-      <div class="input-wrapper is-invalid">
-        <label for="firstName">First Name</label>
-        <input type="text" class="input" placeholder="FirstName" />
-        <span class="error-msg">color text to show that</span>
-      </div></code></pre>
-      
-      <div class="input-wrapper">
-        <label for="firstName">First Name</label>
-        <input type="text" class="input" placeholder="FirstName" />
-      </div>
-      <div class="input-wrapper success">
-        <label for="firstName">First Name</label>
-        <input type="text" class="input" placeholder="FirstName" />
-      </div>
-      <div class="input-wrapper is-invalid">
-        <label for="firstName">First Name</label>
-        <input type="text" class="input" placeholder="FirstName" />
-        <span class="error-msg">color text to show that</span>
-      </div>
-      <div class="input-wrapper with-icon">
-        <i class="fas fa-search"></i>
-        <input type="text" class="input" placeholder="FirstName" />
-      </div>
-      </secton>
-      
-      <section id="image">
-      <h2 class="h2">Image Responsive</h2>
-      <pre>
-        <code class="language-html">
-          <div class="img-wrapper">
-          <img class="img-responsive h-200" src="https://picsum.photos/400/300/" alt="avatar" />
-        </div>
-        <div class="img-wrapper">
-          <img class="img-thumbnail" src="https://picsum.photos/400/300/" alt="avatar" />
-        </div>
-        <div class="img-wrapper">
-          <img class="img-round" src="https://picsum.photos/400/300/" alt="avatar" />
-        </div>    
-        </code>
-      </pre>
+    </main>
+  </article>
 
-      <div class="img-wrapper">
-        <img class="img-responsive h-200" src="https://picsum.photos/400/300/" alt="avatar" />
-      </div>
-       <div class="img-wrapper">
-        <img class="img-thumbnail" src="https://picsum.photos/400/300/" alt="avatar" />
-      </div>
-       <div class="img-wrapper">
-        <img class="img-round" src="https://picsum.photos/400/300/" alt="avatar" />
-      </div>
-    </section>
-
-    <section>
-        <h2 class="h2">Text Utilities</h2>
-        <pre><code class="language-html">
-          <div class="hero">Lorem ipsum dolor.</div>
-          <h1 class="h1">Lorem ipsum dolor sit amet.</h1>
-          <h2 class="h2">Lorem ipsum dolor sit amet. </h2>
-          <h3 class="h3">Lorem ipsum dolor sit amet.</h3>
-          <h4 class="h4">Lorem ipsum dolor sit amet.</h4>
-          <h5 class="h5">Lorem ipsum dolor sit amet.</h5>
-          <h6 class="h6">Lorem ipsum dolor sit amet.</h6>
-
-          <div class="text-lg py-1">Lorem ipsum dolor sit amet.</div>
-          <div class="text-md py-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, consequuntur.</div>
-          <div class="text-sm py-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, deserunt.</div>
-          <div class="text-xs py-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, ut.</div>
-
-          <div class="text-primary py-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, qui?</div>
-          <div class="text-secondary py-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, in.</div>
-          <div class="text-warning py-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam, velit.</div>
-        </code></pre>
-        
-        <div>
-          <div class="hero">Lorem ipsum dolor.</div>
-          <h1 class="h1">Lorem ipsum dolor sit amet.</h1>
-          <h2 class="h2">Lorem ipsum dolor sit amet. </h2>
-          <h3 class="h3">Lorem ipsum dolor sit amet.</h3>
-          <h4 class="h4">Lorem ipsum dolor sit amet.</h4>
-          <h5 class="h5">Lorem ipsum dolor sit amet.</h5>
-          <h6 class="h6">Lorem ipsum dolor sit amet.</h6>
-
-          <div class="text-lg py-1">Lorem ipsum dolor sit amet.</div>
-          <div class="text-md py-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, consequuntur.</div>
-          <div class="text-sm py-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, deserunt.</div>
-          <div class="text-xs py-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, ut.</div>
-
-          <div class="text-primary py-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, qui?</div>
-          <div class="text-secondary py-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, in.</div>
-          <div class="text-warning py-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam, velit.</div>
-          <div class="text-error py-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, tempora.</div>
-          <div class="text-success py-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, eligendi?</div>
-        </div>
-      </section>
-
-      <section id="modal">
-        <h2 class="h2">Modal</h2>
-        <pre><code class="language-html">
-        <div class="modal">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit natus quia possimus, modi quis impedit, porro ratione doloremque exercitationem soluta ad repellat nemo placeat? Voluptatem a ullam rem voluptatibus necessitatibus!
-        </div>
-
-        <div class="modal-overlay closed"></div>  
-        </code></pre>
-        <div class="modal closed">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit natus quia possimus, modi quis impedit, porro ratione doloremque exercitationem soluta ad repellat nemo placeat? Voluptatem a ullam rem voluptatibus necessitatibus!
-        </div>
-        <div class="modal-overlay closed"></div>  
-      </section>
-      
-      <section id="grid">
-      <h2 class="h2">Grid</h2>
+  <!-- grid -->
+    <article id="grid">
+    <header>
+      <div class="h2">Grid</div>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta temporibus alias blanditiis veritatis, quas officiis sit vero, quidem nemo iure hic aspernatur? Sit aut ex dolore accusantium, assumenda eum praesentium. Animi rerum magni repudiandae, dicta odio voluptatum unde tenetur eligendi quod accusamus dolorum non ullam.</p>
+    </header>
+    <main>
       <pre>
       <code class="language-html">
         <!-- min width of the grid cell set 250px default  -->
@@ -509,97 +420,117 @@
         <div class="child">child 5</div>
         <div class="child">child 6</div>
         </div>
-      </section>
-      <section>
-        <h2 class="h2">Snackbar</h2>
-        <pre>
-          <code class="language-html">
-            <div class="snackbar snackbar-secondary my-1 snackbar-bottom-center">
-              <i class="fas fa-info-circle"></i>
-              <span
-                >Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
-                explicabo iusto earum, quos nam ut?</span
-              >
-              <i class="fas fa-times close"></i>
-            </div>
+    </main>
+  </article>
+  
+  
+  <article id="input">
+    <header>
+      <div class="h2">Inputs</div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quod error dolores labore omnis, soluta optio sequi delectus culpa, repudiandae, praesentium sed laborum. Ipsa repudiandae officiis sunt, praesentium aliquam unde alias dicta beatae nisi dolore nesciunt obcaecati laborum aut natus eius soluta totam fugit? Veritatis.</p>
+    </header>
+    <main>
+      <pre><code class="language-html">
+      <div class="input-wrapper">
+        <label for="firstName">First Name</label>
+        <input type="text" class="input" placeholder="FirstName" />
+      </div>
 
-            <div class="snackbar snackbar-primary my-1 snackbar-bottom-left">
-              <i class="fas fa-info-circle"></i>
-              <span>Lorem ipsum dolor sit amet consectetur.</span>
-              <i class="fas fa-times close"></i>
-            </div>
+      <div class="input-wrapper success">
+        <label for="firstName">First Name</label>
+        <input type="text" class="input" placeholder="FirstName" />
+      </div>
+      
+      <div class="input-wrapper is-invalid">
+        <label for="firstName">First Name</label>
+        <input type="text" class="input" placeholder="FirstName" />
+        <span class="error-msg">color text to show that</span>
+      </div>
+    </code></pre>
+      
+      <div class="input-wrapper">
+        <label for="firstName">First Name</label>
+        <input type="text" class="input" placeholder="FirstName" />
+      </div>
+      <div class="input-wrapper success">
+        <label for="firstName">First Name</label>
+        <input type="text" class="input" placeholder="FirstName" />
+      </div>
+      <div class="input-wrapper is-invalid">
+        <label for="firstName">First Name</label>
+        <input type="text" class="input" placeholder="FirstName" />
+        <span class="error-msg">color text to show that</span>
+      </div>
+      <div class="input-wrapper with-icon">
+        <i class="fas fa-search"></i>
+        <input type="text" class="input" placeholder="FirstName" />
+      </div>
+    </main>
+  </article>
 
-            <div class="snackbar snackbar-primary my-1 snackbar-bottom-right">
-              <i class="fas fa-info-circle"></i>
-              <span>Lorem ipsum dolor sit amet consectetur.</span>
-              <i class="fas fa-times close"></i>
-            </div>
-        </code></pre>
+  
+  <article id="list">
+    <header>
+      <div class="h2">List</div>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos mollitia totam, perferendis perspiciatis molestias incidunt a expedita at tempore porro itaque dicta ratione. Vero veniam maxime voluptatibus sed quos soluta laborum molestias, qui fugiat nam labore neque. Magni necessitatibus accusamus consequatur laborum facilis aperiam esse.</p>
+    </header>
+    <main>
+    <pre>
+    <code class="language-html">
+    <ul class="list-style-none list-disc">
+       <li>Lorem ipsum dolor sit amet.</li>
+       <li>Incidunt expedita aliquid perferendis culpa.</li>
+       <li>In amet nostrum eligendi cumque.</li>
+       <li>Rerum autem sunt unde voluptates!</li>
+       <li>Deleniti blanditiis tenetur dolor veritatis!</li>
+     </ul>
      
-    <div class="snackbar snackbar-secondary my-1">
-      <i class="fas fa-info-circle"></i>
-      <span
-        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
-        explicabo iusto earum, quos nam ut?</span
-      >
-      <i class="fas fa-times close"></i>
-    </div>
+     <ol class="list-style-none list-lower-alpha">
+       <li>Lorem ipsum dolor sit amet.</li>
+       <li>Incidunt expedita aliquid perferendis culpa.</li>
+       <li>In amet nostrum eligendi cumque.</li>
+       <li>Rerum autem sunt unde voluptates!</li>
+       <li>Deleniti blanditiis tenetur dolor veritatis!</li>
+     </ol>
+      </code></pre>
+       <ul class="list-style-none list-disc">
+       <li>Lorem ipsum dolor sit amet.</li>
+       <li>Incidunt expedita aliquid perferendis culpa.</li>
+       <li>In amet nostrum eligendi cumque.</li>
+       <li>Rerum autem sunt unde voluptates!</li>
+       <li>Deleniti blanditiis tenetur dolor veritatis!</li>
+     </ul>
+     
+     <ol class="list-style-none list-lower-alpha">
+       <li>Lorem ipsum dolor sit amet.</li>
+       <li>Incidunt expedita aliquid perferendis culpa.</li>
+       <li>In amet nostrum eligendi cumque.</li>
+       <li>Rerum autem sunt unde voluptates!</li>
+       <li>Deleniti blanditiis tenetur dolor veritatis!</li>
+     </ol>
 
-    <div class="snackbar snackbar-primary my-1">
-      <i class="fas fa-info-circle"></i>
-      <span>Lorem ipsum dolor sit amet consectetur.</span>
-      <i class="fas fa-times close"></i>
+    </main>
+  </article>
+  
+  <!-- modal -->
+  <article id="modal">
+    <header>
+    <div class="h2">Modal</div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis alias fugiat explicabo. Ratione, quo id quasi natus repudiandae sint possimus architecto aut dolore earum molestiae adipisci sequi, magni laudantium deleniti.</p>
+    </header>
+    <main>
+    <pre><code class="language-html">
+    <div class="modal">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
     </div>
-
-    <div class="snackbar snackbar-success my-1 snackbar-bottom-right">
-      <i class="fas fa-info-circle"></i>
-      <span>Lorem ipsum dolor sit amet consectetur.</span>
-      <i class="fas fa-times close"></i>
+    <div class="modal-overlay closed"></div>  
+    </code></pre>
+    <div class="modal closed">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit natus quia possimus, modi quis impedit, porro ratione doloremque exercitationem soluta ad repellat nemo placeat? Voluptatem a ullam rem voluptatibus necessitatibus!
     </div>
-      </section>
-    
-    <section id="navar">
-    <h2 class="h2">Navbar</h2>    
-    <nav class="navbar">
-      <div class="nav-left"><i class="fas fa-home"></i>Home</div>
-      <div class="nav-right">
-        <div class="input-wrapper with-icon">
-          <i class="fas fa fa-search"></i>
-          <input type="text" class="input" />
-        </div>
-        <i class="far fa-heart"></i>
-        <i class="far fa-bell"></i>
-        <i class="fas fa-cart-plus"></i>
-        <div class="btn btn-link btn-link-secondary">Logout</div>
-      </div>
-    </nav>
-
-    <nav class="navbar my-1 navbar-dark">
-      <div class="nav-left"><i class="fas fa-home"></i>Home</div>
-      <div class="nav-right">
-        <div class="input-wrapper with-icon">
-          <i class="fas fa fa-search"></i>
-          <input type="text" class="input" />
-        </div>
-        <i class="far fa-heart"></i>
-        <i class="far fa-bell"></i>
-        <i class="fas fa-cart-plus"></i>
-        <div class="btn btn-link btn-link-secondary">Logout</div>
-      </div>
-    </nav>
-    <nav class="navbar my-1 navbar-primary">
-      <div class="nav-left"><i class="fas fa-home"></i>Home</div>
-      <div class="nav-right">
-        <div class="input-wrapper with-icon">
-          <i class="fas fa fa-search"></i>
-          <input type="text" class="input" />
-        </div>
-        <i class="far fa-heart"></i>
-        <i class="far fa-bell"></i>
-        <i class="fas fa-cart-plus"></i>
-        <div class="btn btn-link btn-link-secondary">Logout</div>
-      </div>
-    </nav>
+    <div class="modal-overlay closed"></div>
+    </main>  
+  </article>
 
         <article id="navbar">
           <header>
@@ -693,8 +624,112 @@
       </div>
     </nav>
     </code></pre>
-      </section>
+    </main>
+    </article>
+
+    <!-- rating  -->
+        <article id="rating">
+          <header>
+            <div class="h2">Rating</div>
+            <p>
+              Provides provides option to collect the user feedback, on a scale
+              of 1 to 5 user can rate the items on the page, It also helps user to understand
+              over all rating for an existing product from ther users.
+            </p>
+          </header>
+          
+          <main>
+            <pre class="language-html">
+            <code class="language-html">
+            <div class="stars" style="--rating:3.5;"></div>
+            </code>
+            </pre> 
+            <div class="stars" style="--rating:3.5; background-color: rebeccapurple;"></div>
+          </main>
+    </article>
+    
+    
+  <article id="snackbar">
+    <header>
+        <div class="h2">Snackbar</div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse corrupti atque ea, consequatur veritatis nemo, temporibus libero ducimus velit beatae aspernatur harum quaerat quae delectus placeat sunt. Error, ad aliquam!</p>
+    </header>
+    <main>
+        <pre>
+          <code class="language-html">
+            <div class="snackbar snackbar-secondary my-1 snackbar-bottom-center">
+              <i class="fas fa-info-circle"></i>
+              <span
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+                explicabo iusto earum, quos nam ut?</span
+              >
+              <i class="fas fa-times close"></i>
+            </div>
+
+            <div class="snackbar snackbar-primary my-1 snackbar-bottom-left">
+              <i class="fas fa-info-circle"></i>
+              <span>Lorem ipsum dolor sit amet consectetur.</span>
+              <i class="fas fa-times close"></i>
+            </div>
+
+            <div class="snackbar snackbar-primary my-1 snackbar-bottom-right">
+              <i class="fas fa-info-circle"></i>
+              <span>Lorem ipsum dolor sit amet consectetur.</span>
+              <i class="fas fa-times close"></i>
+            </div>
+        </code></pre>
+     
+    <div class="snackbar snackbar-secondary my-1">
+      <i class="fas fa-info-circle"></i>
+      <span
+        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+        explicabo iusto earum, quos nam ut?</span
+      >
+      <i class="fas fa-times close"></i>
     </div>
+
+    <div class="snackbar snackbar-primary my-1">
+      <i class="fas fa-info-circle"></i>
+      <span>Lorem ipsum dolor sit amet consectetur.</span>
+      <i class="fas fa-times close"></i>
+    </div>
+
+    <div class="snackbar snackbar-success my-1 snackbar-bottom-right">
+      <i class="fas fa-info-circle"></i>
+      <span>Lorem ipsum dolor sit amet consectetur.</span>
+      <i class="fas fa-times close"></i>
+    </div>
+    </main>
+  </article>
+
+    <article id="typography">
+      <header>
+        <div class="h2">Typography scale</div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, voluptas sint totam nihil veritatis eius iste nisi doloremque. Aut facilis cupiditate consequuntur provident neque! Unde corrupti et repellendus ratione praesentium.</p>
+      </header>
+      <main>
+      <pre>
+        <code class="langauge-html">
+          <h6 class="h6">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h6>
+          <h5 class="h5">Lorem ipsum dolor sit amet, consectetur adipisicing.</h5>
+          <h4 class="h4">Lorem ipsum dolor sit amet, consectetur adipisicing.</h4>
+          <h3 class="h3">Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
+          <h2 class="h2">Lorem ipsum dolor sit amet, consectetur adipisicing.</h2>
+          <h1 class="h1">Lorem ipsum dolor sit amet, consectetur adipisicing.</h1>
+          <div class="hero">Lorem ipsum dolor sit amet, consectetur adipisicing.</div>
+        </code>
+      </pre>
+          <h6 class="h6">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h6>
+          <h5 class="h5">Lorem ipsum dolor sit amet, consectetur adipisicing.</h5>
+          <h4 class="h4">Lorem ipsum dolor sit amet, consectetur adipisicing.</h4>
+          <h3 class="h3">Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
+          <h2 class="h2">Lorem ipsum dolor sit amet, consectetur adipisicing.</h2>
+          <h1 class="h1">Lorem ipsum dolor sit amet, consectetur adipisicing.</h1>
+          <div class="hero">Lorem ipsum dolor sit amet, consectetur adipisicing.</div>
+      </main>
+    </article>
+
+      </main>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
     <script>
       // hljs.highlightAll();
