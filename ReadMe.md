@@ -2,7 +2,7 @@
 
 ## Demo Link
 
-[Demo](https://neog-component-library-arun.netlify.app/)
+[Demo](https://avon-component-library-arun.netlify.app/)
 
 ### List of UI Componen
 
