@@ -151,7 +151,7 @@ input[type="reset"] {
   border: none;
   background-color: initial;
   padding: 8px;
-  display: inline-flexbox;
+  display: inline-flex;
 }
 
 .btn-fab {

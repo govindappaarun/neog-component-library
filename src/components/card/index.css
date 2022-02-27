@@ -24,7 +24,7 @@ Cards with shadow
 }
 
 .card:hover .card-media img {
-  transform: scale(1.08);
+  transform: scale(1.02);
   transition: all 0.3s;
 }
 
@@ -39,6 +39,7 @@ Cards with shadow
   font-size: 1.25rem;
   font-weight: 700;
 }
+
 .card-media {
   position: relative;
 }
@@ -57,13 +58,16 @@ Cards with shadow
 .card.horizontal {
   width: 25rem;
 }
+
 .card.horizontal .card-body {
   display: flex;
   gap: 10px;
 }
+
 .card.horizontal .card-body {
   display: flex;
 }
+
 .card.card.horizontal .card-media img {
   height: 100px;
   width: 100px;
