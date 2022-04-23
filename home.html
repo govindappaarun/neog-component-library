@@ -44,6 +44,7 @@
           <li><a href="#card">Card</a></li>
           <li><a href="#grid">Grid</a></li>
           <li><a href="#input">Input</a></li>
+          <li><a href="#image">Image</a></li>
           <li><a href="#list">List</a></li>
           <li><a href="#modal">Modal</a></li>
           <li><a href="#navbar">Navbar</a></li>
@@ -205,6 +206,16 @@
       <span class="badge"></span>      
       <span class="badge badge-away"></span>
     </div>
+      
+    <div class="badge-wrapper m-2">
+        <i class="fas fa-home icon"></i>
+        <span class="badge badge-text icon-badge">0</span>
+    </div>
+
+    <div class="badge-wrapper m-2">
+        <i class="fas fa-heart icon"></i>
+        <span class="badge badge-text icon-badge">99</span>
+    </div>
    </code>
   </pre>
     <div>
@@ -218,6 +229,36 @@
       <span class="badge badge-online"></span>
       <span class="badge"></span>
       <span class="badge badge-away"></span>
+    </div>
+    <div style="margin-top: 2rem">
+      <div class="badge-wrapper">
+       <img
+            loading="lazy"
+            class="avatar avatar-lg"
+            src="https://picsum.photos/200/300/"
+            alt="avatar"
+       />
+      <span class="badge badge-online badge-top-right"></span>
+      </div>
+       <div class="badge-wrapper">
+       <img
+            loading="lazy"
+            class="avatar avatar-lg"
+            src="https://picsum.photos/200/300/"
+            alt="avatar"
+       />
+      <span class="badge badge-offline badge-bottom"></span>
+      </div>
+      
+      <div class="badge-wrapper m-2">
+        <i class="fas fa-home icon"></i>
+        <span class="badge badge-text icon-badge">0</span>
+      </div>
+
+      <div class="badge-wrapper m-2">
+        <i class="fas fa-heart icon"></i>
+        <span class="badge badge-text icon-badge">99</span>
+      </div>
     </div>
   </main>
 </article>
@@ -249,6 +290,8 @@
       <button class="btn btn-outline-secondary">Button</button>
       <button class="btn btn-outline-error">Button</button>
       <button class="btn btn-link">Button</button>
+      <button class="btn btn-link btn-link-primary">Primary Link Button</button>
+      <button class="btn  btn-link btn-link-secondary">Secondary link Button</button>
     </div>
     <div>
       <button class="btn btn-fab"><i class="far fa-plus"></i></button>
@@ -281,9 +324,15 @@
     <button class="btn btn-outline-secondary">
       <i class="fas fa-plus btn-icon"></i> Lorem, ipsum.
     </button>
+
     <button class="btn btn-outline-primary">
       Lorem, ipsum. <i class="fas fa-plus btn-icon end"></i>
     </button>
+     
+    <button class="btn btn-link">Button</button>
+    <button class="btn btn-link btn-link-primary">Primary Link Button</button>
+    <button class="btn  btn-link btn-link-secondary">Secondary link Button</button>
+
     </div>
   </main>
 </article>
@@ -298,39 +347,37 @@
       </p>
     </header>
     <main>
+    <div class="h3">Cards with shadow & Text ony cards</div>
       <pre>
               <code class="language-html">
                 <div class="card">
                   Lorem ipsum dolor sit amet.
                 </div>
+
+                 <div class="card shadow-xs">
+                  <div class="h2">Title</div>
+                </div>
               </code>
             </pre>
 
-      <h3>Shadows</h3>
       <div>
       <div class="card shadow-xs">
-        <div class="card-media">
           <div class="h2">Title</div>
-        </div>
       </div>
       <div class="card shadow-sm">
-        <div class="card-media">
           <div class="h2">Title</div>
-        </div>
       </div>
       <div class="card shadow-md">
-        <div class="card-media">
           <div class="h2">Title</div>
-        </div>
       </div>
       <div class="card shadow-lg">
-        <div class="card-media">
           <div class="h2">Title</div>
-        </div>
       </div>
     </div>
     <div>
-    <div class="card shadow-1">
+    <div class="h3 my-2">Card with Badges</div>
+    <pre><code>
+      <div class="card shadow-1">
         <div class="card-body">
           <div class="card-media">
             <div class="badge badge-text"><i class="fas fa-heart"></i></div>
@@ -355,15 +402,44 @@
             <div class="icons flex flex-center">
               <button class="icon-btn"><i class="far fa-heart"></i></button>
               <button class="icon-btn"><i class="fa fa-share"></i></button>
-              <button class="icon-btn">
-                <i class="far fa-comment-dots"></i>
-              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </code></pre>
+
+    <div class="card shadow-1">
+        <div class="card-body">
+          <div class="card-media">
+            <div class="badge badge-text"><i class="fas fa-heart"></i></div>
+            <img loading="lazy" src="https://picsum.photos/200/300/" alt="avatar" />
+          </div>
+          <div class="card-header">
+            <h2 class="card-title">Our Changing Planet</h2>
+            <p class="card-sub-title">by Kurt Wagner</p>
+          </div>
+          <div class="card-text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. dolor sit
+            amet consectetur adipisicing elit. dolor sit amet consectetur
+            adipisicing elit.
+          </div>
+        </div>
+        <div class="card-footer">
+          <div class="card-actions flex">
+            <div class="buttons flex">
+              <button class="btn btn-link btn-link-primary">Like</button>
+              <button class="btn btn-link btn-link-secondary">Submit</button>
+            </div>
+            <div class="icons flex flex-center gap-2">
+              <button class="icon-btn"><i class="far fa-heart"></i></button>
+              <button class="icon-btn"><i class="fa fa-share"></i></button>
             </div>
           </div>
         </div>
       </div>
       </div>
       <div>
+      <div class="h3 my-2">Vertical/Horizontal cards</div>
       <div class="card horizontal">
         <div class="card-body">
           <div class="card-media">
@@ -373,26 +449,14 @@
               alt="avatar"
             />
           </div>
-          <div class="card-header">
-            <h2 class="card-title">Our Changing Planet</h2>
-            <p class="card-sub-title">by Kurt Wagner</p>
-          </div>
-        </div>
-        <div class="card-footer">
-          <div class="card-actions flex">
-            <div class="buttons flex">
-              <button class="btn btn-link">Like</button>
-              <button class="btn btn-link">Submit</button>
-            </div>
-            <div class="icons flex flex-center">
-              <button class="icon-btn"><i class="far fa-heart"></i></button>
-              <button class="icon-btn"><i class="fa fa-share"></i></button>
-              <button class="icon-btn"><i class="far fa-comment-dots"></i></button>
-            </div>
+          <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque consequuntur quod ipsum a nulla laborum fugit beatae, eligendi nostrum ipsam doloribus, ullam dolorum, labore provident.
           </div>
         </div>
       </div>
       </div>
+     
+      <div class="h3 my-2">Cards with dismiss</div>
       <div class="card">
         <div class="card-header">
         <div class="card-title">Lorem ipsum dolor sit.</div>
@@ -402,6 +466,29 @@
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos mollitia similique nostrum? Pariatur odit, quisquam saepe natus incidunt ducimus repellendus.
         </div>
       </div>
+
+      <div class="h3 my-2">Cards with text overlay</div>
+       <div class="card card-w-overlay">
+         <div class="card-header text-overlay">
+            <h2 class="card-title">Our Changing Planet</h2>
+            <p class="card-sub-title">by Kurt Wagner</p>
+          </div>
+          <div class="card-body">
+           <div class="card-media">
+            <img loading="lazy" src="https://picsum.photos/200/300/" alt="avatar" />
+           </div>
+          </div>
+          <div class="card-footer">
+            <div class="icons flex flex-space-between">
+              <button class="icon-btn"><i class="far fa-heart"></i></button>
+              <button class="icon-btn"><i class="fa fa-share"></i></button>
+              <button class="icon-btn">
+                <i class="far fa-comment-dots"></i>
+              </button>
+            </div>
+          </div>
+      </div>
+
     </main>
   </article>
 
@@ -500,6 +587,29 @@
     </main>
   </article>
 
+  <article id="image">
+    <header>
+      <div class="h2">Image</div>
+      <p> Image component includes, Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quod error dolores labore omnis, soluta optio sequi delectus culpa, repudiandae, praesentium sed laborum. Ipsa repudiandae officiis sunt, praesentium aliquam unde alias dicta beatae nisi dolore nesciunt obcaecati laborum aut natus eius soluta totam fugit? Veritatis.</p>
+    </header>
+    <main>
+      <pre>
+        <code class="language-html">
+         <img src="https://picsum.photos/100/100/" class="img-round" alt="image example" />
+         <img src="https://picsum.photos/200/300/" class="img-responsive" alt="reponsive image"/>
+        </code>
+      </pre>
+       <img src="https://picsum.photos/100/100/" class="img-round" alt="image example" />
+       <div style="max-width:15rem; aspect-ratio: 1;">
+       <img src="https://picsum.photos/200/300/" class="img-responsive" alt="reponsive image"/>
+       </div>
+
+       <div style="max-width:25rem; aspect-ratio: 1;">
+       <img src="https://picsum.photos/200/300/" class="img-responsive" alt="reponsive image"/>
+       </div>
+  </main>
+  </article>
+
   
   <article id="list">
     <header>
@@ -541,6 +651,23 @@
        <li>Deleniti blanditiis tenetur dolor veritatis!</li>
      </ol>
 
+     <div class="h3 my-2">Stacked List</div>
+     <pre><code>
+      <ul class="list-stacked">
+       <div class="alert alert-success">Lorem ipsum dolor sit amet.</div>
+       <div class="alert alert-success">Non voluptate alias quae molestiae.</div>
+       <div class="alert alert-success">Quo, fugit! Quam, reprehenderit maxime!</div>
+       <div class="alert alert-success">Maiores harum porro voluptatem quidem.</div>
+       <div class="alert alert-success">Deleniti ratione nesciunt pariatur labore.</div>
+     </ul>
+     </code></pre>
+     <ul class="list-stacked">
+       <div class="alert alert-success">Lorem ipsum dolor sit amet.</div>
+       <div class="alert alert-success">Non voluptate alias quae molestiae.</div>
+       <div class="alert alert-success">Quo, fugit! Quam, reprehenderit maxime!</div>
+       <div class="alert alert-success">Maiores harum porro voluptatem quidem.</div>
+       <div class="alert alert-success">Deleniti ratione nesciunt pariatur labore.</div>
+     </ul>
     </main>
   </article>
   
@@ -557,11 +684,12 @@
     </div>
     <div class="modal-overlay closed"></div>  
     </code></pre>
-    <div class="modal closed">
+    <!-- <div class="modal-overlay closed"> -->
+    <div class="modal" style="position: relative;">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit natus quia possimus, modi quis impedit, porro ratione doloremque exercitationem soluta ad repellat nemo placeat? Voluptatem a ullam rem voluptatibus necessitatibus!
     </div>
-    <div class="modal-overlay closed"></div>
-    </main>  
+    <!-- </div> -->
+  </main>
   </article>
 
         <article id="navbar">
@@ -746,6 +874,18 @@
           <h2 class="h2">Lorem ipsum dolor sit amet, consectetur adipisicing.</h2>
           <h1 class="h1">Lorem ipsum dolor sit amet, consectetur adipisicing.</h1>
           <div class="hero">Lorem ipsum dolor sit amet, consectetur adipisicing.</div>
+          
+          <pre>
+          <code class="langauge-html">
+            <div class="text-center">lorem centered text</div>
+            <div class="text-sm">Small Text</div>
+            <div class="text-grey">example for grey text</div>
+          </code>
+          </pre>
+
+          <div class="text-center">lorem centered text</div>
+          <div class="text-sm">Small Text</div>
+          <div class="text-grey">example for grey text</div>
       </main>
     </article>
 

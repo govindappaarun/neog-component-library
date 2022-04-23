@@ -52,6 +52,10 @@
   text-align: left;
 }
 
+.text-grey {
+  color: var(--grey-main);
+}
+
 .text-primary {
   color: var(--primary-main);
   background-color: var(--primary-ultra);
@@ -79,4 +83,8 @@
 
 .text-uppercase {
   text-transform: uppercase;
+}
+
+.icon {
+  font-size: 2rem;
 }
